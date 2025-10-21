@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki de Dark Souls 3</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+ <div class="menu-lateral">
+ <img src="./media/logo-menu2.png" alt="Logo Dark Souls" class="logo-menu">
+  
+  <div class="menu-links-container">
+    <a href="./principal.html">Início</a>
+    <a href="./chefes.html">Chefes</a>
+    <a href="./npcs.html">Npcs</a>
+   
+  </div>
+
+  <div class="menu-buttons">
+    <button class="accessibility-btn" onclick="toggleAccessibility()">Acessibilidade</button>
+    <button class="toggle-btn" onclick="toggleTheme()">Mudar tema</button>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+  </div>
+</div>
+
+
+  <!-- JavaScript -->
+  <script>
+    // Alterna entre modo claro e escuro
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    // Alterna modo de alta acessibilidade
+    function toggleAccessibility() {
+      document.body.classList.toggle('high-contrast');
+    }
+
+    // Exemplo de função para ir para o menu circular
+    function goToMenu() {
+      window.location.href = 'menu.html';
+    }
+
+    window.addEventListener('load', () => {
+  document.querySelector('.conteudo').classList.add('visible');
+});
+
+// Mostra o botão quando a página rola para baixo
+  window.onscroll = function() {toggleScrollBtn()};
+
+  function toggleScrollBtn() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+  
+
+  </script>
+
+  <!-- Conteúdo principal -->
+  <div class="conteudo">
+    <hr>
+    <h1 class="story-script-regular">WIKI DE DARK SOULS 3</h1>
+    <hr>
+
+   
+    <h1> Guia Completo de 100% Dark Souls III</h1>
+
+<h3 class="oswald-uniquifier" >Bem-vindo ao Guia Completo de 100% de Dark Souls III! <br>Este guia foi desenvolvido para ajudar jogadores de todos os níveis a conquistar a platina, explorar cada canto de Lothric e aproveitar ao máximo cada desafio que o jogo oferece.
+<br>
+O conteúdo apresentado aqui é resultado de experiências compartilhadas pela comunidade, reunidas com base no renomado Guia de Platina do Tiops e nas informações da wiki oficial de Dark Souls III, garantindo que cada estratégia, dica e passo a passo seja confiável e eficiente.
+<br>
+O que você vai encontrar neste guia:
+<br>
+🗺️ Missões, áreas e colecionáveis – Saiba onde encontrar todos os itens, anéis, feitiços e piromancias essenciais.
+<br>
+⚔️ Chefes e estratégias – Conselhos práticos para enfrentar cada inimigo, com referência a suas seções completas.
+<br>
+📜 Missões de NPC – Passo a passo das quests e dicas para não perder nenhuma oportunidade de completar a história e desbloquear finais.
+<br>
+💍 Fashion Souls e Builds – Sugestões de equipamentos e builds para otimizar combate e estilo visual.
+<br>
+🔄 Finais do jogo – Orientação sobre como alcançar cada um dos três finais possíveis.
+<br>
+🏆 Rumo à platina – Checklist visual de todos os troféus, com dicas para completá-los de forma eficiente.
+<br>
+Este guia foi estruturado para que você possa navegar facilmente, encontrando informações detalhadas apenas quando necessário, sem repetição, e sempre com referências às seções completas de chefes, NPCs, colecionáveis e builds.
+
+Prepare-se para a jornada e que a chama de Lothric ilumine seu caminho até a platina!</h3>
+  <br><br><br>
+ <h2  class="oswald-uniquifier"> 🗡️ O Início de Sua Jornada</h2>
+
+<h3 class="oswald-uniquifier">Este é o começo real de sua jornada em Dark Souls III. A primeira escolha que você fizer, incluindo a seleção de classe, pode influenciar o seu estilo de jogo, a facilidade com que enfrenta inimigos e a forma como explora Lothric.
+
+Escolha sua Classe:</h3>
+
+<!-- Container inicial -->
+<div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+    <!-- Imagem à esquerda -->
+   <img src="./media/criação de personagem.webp" alt="Cavaleiro" style="width: 400px; height: auto; margin-right: 20px;" class="boss-img">
+
+    <!-- Texto com instruções -->
+    <div>
+        <h3 class="oswald-uniquifier">Escolha sua Classe:
+        <p>
+        Para começar sua jornada em Dark Souls III de forma mais segura e eficiente, recomendamos escolher a classe Cavaleiro (Knight).  
+        <br><br>
+        <strong>Benefícios:</strong> Alta vitalidade e defesa física, ideal para iniciantes que querem sobreviver às primeiras áreas do jogo.  
+        <br><br>
+        <strong>Equipamento inicial:</strong> Espada Longa, escudo de cavaleiro e conjunto de armadura pesada.  
+        <br><br>
+        Além disso, logo no início do jogo, você deve procurar e equipar o Anel de Vida, que aumenta seu HP máximo e facilita os combates iniciais.  
+        <br><br>
+        A partir daqui, o guia começa de verdade e será dividido em áreas específicas para facilitar sua jornada.  
+        Para informações mais detalhadas e avançadas, consulte o <a href="https://www.youtube.com/watch?v=wRMNuSPfYUM&list=PLQPo0Obfqe4CVIEkkp3J2NAj6b4n5naTr" target="_blank">Guia de Platina do Tiops</a>.
+        </p></h3>
+    </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- ÁREA: CEMITÉRIO DAS CINZAS -->
+<!-- ===================================== -->
+
+<div class="area-container">
+
+  <h2> Cemitério das Cinzas</h2>
+  <p>
+    A primeira área de <strong>Dark Souls III</strong> serve como introdução ao combate, coleta e exploração, além de ser essencial para começar várias quests da versão base e missões futuras.
+    É aqui que o jogador aprende a dominar os controles e organiza seus recursos para a jornada.
+    (<a href="https://darksouls.fandom.com/wiki/Cemetery_of_Ash" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <p>
+    O caminho através do Cemitério das Cinzas é simples, idealizado para apresentar os conceitos básicos do jogo — combate, esquiva, uso de fogueiras e coleta de itens — e termina na arena contra o primeiro chefe obrigatório.
+  </p>
+  <ul>
+    <li>Ao acordar, o jogador se encontra próximo à primeira <strong>Fogueira do Cemitério das Cinzas</strong>.</li>
+    <li>Derrote inimigos fracos como <em>Hollows</em> e um <em>Wild Dog</em> no percurso.</li>
+    <li>Explore o caminho elevado que leva até o primeiro chefe da jornada — <strong>Iudex Gundyr</strong>.</li>
+    <li>Após derrotá-lo, acenda a fogueira e siga rumo ao <strong>Santuário do Elo de Fogo</strong>.</li>
+  </ul>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <p>
+    O Cemitério das Cinzas possui poucos NPCs, mas alguns encontros e eventos influenciam o progresso de certas missões:
+  </p>
+  <ul>
+    <li><strong>Irina de Carim</strong> e <strong>Eygon de Carim</strong> podem aparecer posteriormente se suas missões forem iniciadas no Santuário. 
+      Converse com eles sempre que possível para não perder etapas das quests.
+    </li>
+    <li>Mais detalhes sobre suas histórias podem ser encontrados na seção <a href="./npcs.html">NPCs</a>.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Importantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Ashen Estus Flask</strong></td>
+      <td>Corpo logo à frente do ponto inicial</td>
+      <td>Permite restaurar FP, essencial para builds de magia.</td>
+    </tr>
+    <tr>
+      <td><strong>Titanite Scale</strong></td>
+      <td>Drop do <em>Ravenous Crystal Lizard</em> (à direita do início)</td>
+      <td>Usada para aprimorar armas únicas e de chefe.</td>
+    </tr>
+    <tr>
+      <td><strong>Firebomb (x5)</strong></td>
+      <td>No caminho principal</td>
+      <td>Útil contra grupos de inimigos e bosses iniciais.</td>
+    </tr>
+    <tr>
+      <td><strong>Titanite Shard</strong></td>
+      <td>Em torno da fogueira principal</td>
+      <td>Usada para melhorar armas comuns — essencial para a platina.</td>
+    </tr>
+    <tr>
+      <td><strong>Ember</strong></td>
+      <td>Corpos próximos à área inicial</td>
+      <td>Aumenta temporariamente o HP e permite invocar aliados.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Avançadas</h3>
+  <ul>
+    <li>Explore bem a área — o <em>lobo cristalino</em> é o primeiro inimigo de alto risco e dropa materiais valiosos.</li>
+    <li>Treine esquivas e parries aqui; o risco é baixo e o aprendizado útil.</li>
+    <li>Recolha todos os itens para facilitar o progresso rumo à platina.</li>
+  </ul>
+
+  <p><strong>Resumo:</strong> O Cemitério das Cinzas é o campo de treino de Dark Souls III. Explore, colete tudo e esteja preparado para enfrentar <strong>Iudex Gundyr</strong> e seguir ao Santuário.</p>
+
+</div>
+
+
+
+<!-- ===================================== -->
+<!-- ÁREA: SANTUÁRIO DO ELO DE FOGO -->
+<!-- ===================================== -->
+
+<div class="area-container">
+
+  <h2> Santuário do Elo de Fogo (Firelink Shrine)</h2>
+
+  <p>
+    Após derrotar <strong>Iudex Gundyr</strong> no Cemitério das Cinzas, você despertará diante de um novo horizonte: o <strong>Santuário do Elo de Fogo</strong>, o coração central de <em>Dark Souls III</em>.  
+    É aqui que o jogador começa a compreender a verdadeira estrutura do jogo — um ponto de descanso, aprimoramento e encontro com personagens fundamentais para a jornada rumo à platina.
+    (<a href="https://darksouls.fandom.com/wiki/Firelink_Shrine" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> A Chegada</h3>
+  <p>
+    Ao inserir a <strong>Coiled Sword</strong> (Espada Enrolada) na fogueira central, você reativa o poder do Santuário, tornando-o seu principal ponto de viagem e descanso.  
+    Este local funcionará como sua base permanente ao longo de toda a jornada — é nele que você retornará para aprimorar atributos, reforjar armas, conversar com NPCs e preparar-se para as próximas áreas.
+  </p>
+
+  <ul>
+    <li>Interaja com a fogueira central para desbloquear o <strong>teleporte</strong> e a opção de <strong>viajar</strong> entre locais.</li>
+    <li>Converse com a <strong>Guardiana do Fogo (Fire Keeper)</strong> — ela é a responsável por canalizar almas e permitir que você suba de nível.</li>
+    <li>Após a conversa, use as almas adquiridas ao derrotar Iudex Gundyr para aumentar os atributos desejados.</li>
+    <li>O próximo destino é a <strong>Muralha de Lothric</strong>, acessível através da viagem pela fogueira.</li>
+  </ul>
+
+  <hr>
+
+  <h3>NPCs Importantes</h3>
+  <ul>
+    <li><strong>Guardiana do Fogo:</strong> Personagem central do santuário. Responsável por aumentar seus atributos e por uma das linhas de missões que influenciam os finais do jogo. 
+    Evite atacá-la, pois isso pode impedir a progressão natural da história.</li>
+
+    <li><strong>Ferreiro Andre:</strong> Localizado à esquerda da sala principal. Ele aprimora armas, infunde gemas e restaura Estus Flasks.</li>
+
+    <li><strong>Vendedor da Torre (Shrine Handmaid):</strong> Comerciante inicial do jogo. Vende consumíveis, armas básicas e chaves necessárias para explorar áreas adicionais.</li>
+
+    <li><strong>Hawkwood, o Desistente:</strong> Um dos primeiros cavaleiros que você encontra no santuário. Tem uma questline curta e simples, relacionada a seu passado e à busca por redenção.</li>
+  </ul>
+
+  <p>
+     <em>Observação:</em> todas as missões desses NPCs impactam troféus relacionados à platina e serão explicadas detalhadamente na seção de <a href="./npcs.html">NPCs</a>.
+  </p>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Coiled Sword</strong></td>
+      <td>Obtida ao derrotar Iudex Gundyr e usada na fogueira central</td>
+      <td>Permite ativar a viagem entre áreas e o uso completo do Santuário.</td>
+    </tr>
+    <tr>
+      <td><strong>Estus Shard</strong></td>
+      <td>Dentro do Santuário, atrás do Ferreiro Andre</td>
+      <td>Aumenta a quantidade total de Estus disponíveis — essencial para builds de resistência.</td>
+    </tr>
+    <tr>
+      <td><strong>Mortician's Ashes</strong></td>
+      <td>Obtidas posteriormente na Torre do Santuário</td>
+      <td>Permite expandir o inventário da Shrine Handmaid.</td>
+    </tr>
+    <tr>
+      <td><strong>Tower Key</strong></td>
+      <td>Vendida pela Shrine Handmaid por 20.000 almas</td>
+      <td>Desbloqueia a torre externa do Santuário, onde há itens e atalhos importantes.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas e Observações</h3>
+  <ul>
+    <li>Fale com todos os NPCs até esgotar seus diálogos — isso garante que suas missões avancem corretamente.</li>
+    <li>O Santuário é seguro, então aproveite para testar armas e feitiços sem riscos.</li>
+    <li>Reforce seus frascos de Estus com as Shards encontradas para facilitar o início da jornada.</li>
+    <li>Antes de seguir para a Muralha de Lothric, certifique-se de aumentar seus atributos principais e ajustar seus equipamentos.</li>
+  </ul>
+
+  <p><strong>Resumo:</strong> O Santuário do Elo de Fogo é o centro vital de Dark Souls III — onde você cresce, se equipa e prepara-se para as provações de Lothric. Aqui começa, de fato, a jornada do Escolhido das Cinzas.</p>
+
+</div>
+
+<!-- ===================================== -->
+<!-- ÁREA: MURALHA DE LOTHIRC -->
+<!-- ===================================== -->
+
+<div class="area-container">
+
+  <h2> Muralha de Lothric (High Wall of Lothric)</h2>
+
+  <p>
+    A Muralha de Lothric é a primeira grande área aberta após o Santuário do Elo de Fogo. 
+    Aqui o jogador começa a enfrentar inimigos mais desafiadores, aprender a explorar atalhos, coletar itens importantes e se preparar para a primeira luta de chefe, <strong>Vordt do Vale Boreal</strong>.
+    (<a href="https://darksouls.fandom.com/wiki/High_Wall_of_Lothric" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Após sair do Santuário do Elo de Fogo, encontre a primeira fogueira da Muralha.</li>
+    <li>Avance pela muralha enfrentando <strong>Cavaleiros de Lothric</strong> e <strong>cães famintos</strong>.</li>
+    <li>Alcance a primeira fogueira da área e explore os arredores.</li>
+    <li>Continue até a <strong>Catedral de Lothric</strong>, onde encontrará a NPC <strong>Emma</strong>.</li>
+    <li>Prepare-se para enfrentar <strong>Vordt do Vale Boreal</strong> na Catedral.</li>
+  </ol>
+
+  <hr>
+
+  <h3>NPCs Importantes</h3>
+  <ul>
+    <li><strong>Emma, Alta Sacerdotisa de Lothric:</strong> entrega a Bandeira Lothric Pequena e ativa o pacto Caminho Azul.</li>
+    <li><strong>Greirat do Assentamento dos Mortos:</strong> aparece após derrotar Vordt e inicia sua questline.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Bandeira Lothric Pequena</strong></td>
+      <td>Obtida com Emma</td>
+      <td>Necessária para acessar o Assentamento dos Mortos</td>
+    </tr>
+    <tr>
+      <td><strong>Espada Curta</strong></td>
+      <td>Cadáver próximo à primeira fogueira</td>
+      <td>Arma inicial útil para builds corpo a corpo</td>
+    </tr>
+    <tr>
+      <td><strong>Escudo de Lothric</strong></td>
+      <td>Cadáver na área externa da Catedral</td>
+      <td>Defesa contra ataques físicos e magias</td>
+    </tr>
+    <tr>
+      <td><strong>Fragmento de Titanita</strong></td>
+      <td>Drop de inimigos e baús da área</td>
+      <td>Usado para aprimorar armas essenciais</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li><strong>Cavaleiros de Lothric:</strong> use escudos com boa estabilidade ou pratique esquivas.</li>
+    <li><strong>Cães Famintos:</strong> ataque de longe ou com ataques de área; evite confrontos diretos em grupo.</li>
+    <li><strong>Vordt do Vale Boreal:</strong> fique próximo a ele para evitar ataques à distância e aproveite as janelas de ataque após seus golpes.</li>
+  </ul>
+
+  <p><strong>Resumo:</strong> A Muralha de Lothric é a primeira grande área exploratória do jogo, preparando o jogador para inimigos mais fortes e o primeiro chefe obrigatório, <strong>Vordt do Vale Boreal</strong>.</p>
+
+</div>
+
+<!-- ===================================== -->
+<!-- ÁREA: ASSENTAMENTO DOS MORTOS-VIVOS -->
+<!-- ===================================== -->
+
+<div class="area-container">
+
+  <h2> Assentamento dos Mortos-vivos (Undead Settlement)</h2>
+
+  <p>
+    O Assentamento dos Mortos-vivos é a primeira grande área aberta do jogo, cheia de inimigos em grupo, caminhos alternativos e itens importantes para progressão e troféus. 
+    Aqui também começam várias <strong>questlines de NPCs</strong> essenciais para a platina.
+    (<a href="https://darksouls.fandom.com/wiki/Undead_Settlement" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Chegue à fogueira inicial do Assentamento.</li>
+    <li>Avance pela vila enfrentando inimigos humanos e cães, explorando casas e torres.</li>
+    <li>Ative atalhos desbloqueando escadas e portas.</li>
+    <li>Alcance a praça central e enfrente o chefe <strong>Rato Gigante (Boss Gigante)</strong>.</li>
+    <li>Explore o local para coletar itens como <strong>Estus Shard</strong>, <strong>Titanita</strong> e armas básicas.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Greirat do Assentamento:</strong> inicia a quest de saques e vendáveis, impactando troféus.</li>
+    <li><strong>Shrine Handmaid:</strong> comerciante da área, vende consumíveis, chaves e armas.</li>
+    <li>Outros NPCs opcionais aparecem após eventos da área, ligados a futuras quests.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Estus Shard</strong></td>
+      <td>Espalhado em casas e torres do assentamento</td>
+      <td>Aumenta o número de frascos de Estus</td>
+    </tr>
+    <tr>
+      <td><strong>Fragmento de Titanita</strong></td>
+      <td>Drop de inimigos e baús</td>
+      <td>Usado para aprimorar armas</td>
+    </tr>
+    <tr>
+      <td><strong>Chave do Assentamento</strong></td>
+      <td>Baú em local estratégico</td>
+      <td>Desbloqueia atalhos e baús fechados</td>
+    </tr>
+    <tr>
+      <td><strong>Armas e equipamentos</strong></td>
+      <td>Espalhados na área e cadáveres</td>
+      <td>Melhora combate e builds iniciais</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Use ataques à distância para eliminar grupos de inimigos rapidamente.</li>
+    <li>Fique atento a armadilhas e emboscadas espalhadas pelo assentamento.</li>
+    <li>Explore completamente a área para não perder itens essenciais para troféus.</li>
+    <li>Evite atacar NPCs da área para não travar quests importantes.</li>
+  </ul>
+
+  <p><strong>Resumo:</strong> O Assentamento dos Mortos-vivos é uma área chave para iniciar quests de NPCs, coletar itens essenciais e enfrentar o primeiro chefe maior, preparando o jogador para áreas mais desafiadoras em Lothric.</p>
+
+</div>
+ 
+<div class="area-container">
+
+  <h2> Caminho dos Sacrifícios (Road of Sacrifices)</h2>
+
+  <p>
+    O Caminho dos Sacrifícios é uma área de transição entre o Assentamento dos Mortos-Vivos e a Catedral das Profundezas, 
+    marcada por terrenos pantanosos, ruínas e inimigos deformados que representam os efeitos da corrupção de Lothric. 
+    É também um ponto de conexão com o Pântano de Farron e onde algumas quests de NPCs importantes se iniciam.  
+    (<a href="https://darksouls.fandom.com/wiki/Road_of_Sacrifices" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Após sair do Assentamento, ative a fogueira inicial do Caminho dos Sacrifícios.</li>
+    <li>Avance enfrentando inimigos alados e soldados deformados. Use o terreno aberto para manter distância.</li>
+    <li>No trajeto, fique atento a um desvio à direita levando à fogueira <strong>Halfway Fortress</strong>.</li>
+    <li>Converse com <strong>Orbeck de Vinheim</strong> caso possua Inteligência 10 ou superior, para iniciar sua quest de magias.</li>
+    <li>Ao final do caminho, siga pela rota que leva à <strong>Catedral das Profundezas</strong> ou pela lateral em direção ao <strong>Pântano de Farron</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Orbeck de Vinheim:</strong> Pode ser encontrado perto da fogueira Halfway Fortress. Ensina feitiços e sua quest é essencial para troféus relacionados à magia.</li>
+    <li><strong>Horace, o Silencioso e Anri de Astora:</strong> Encontrados na mesma fogueira. São NPCs ligados a uma das linhas de missões mais importantes para os finais do jogo.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Fragmento de Estus</strong></td>
+      <td>Perto da fogueira Halfway Fortress</td>
+      <td>Aumenta o número de usos do Estus Flask</td>
+    </tr>
+    <tr>
+      <td><strong>Anel do Sacrifício</strong></td>
+      <td>Em um penhasco próximo ao primeiro grupo de inimigos alados</td>
+      <td>Evita perda de almas ao morrer uma vez</td>
+    </tr>
+    <tr>
+      <td><strong>Feitiço "Arma Mágica"</strong></td>
+      <td>Perto das criaturas corrompidas aladas</td>
+      <td>Encanta armas com dano mágico temporário</td>
+    </tr>
+    <tr>
+      <td><strong>Alma de Viajante Desconhecido</strong></td>
+      <td>Espalhada por cadáveres no caminho</td>
+      <td>Concede almas adicionais ao consumir</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Use magias ou arcos para eliminar inimigos voadores antes que se aproximem.</li>
+    <li>Explore os dois caminhos possíveis ao final da área para desbloquear acesso antecipado ao Pântano de Farron.</li>
+    <li>Converse com todos os NPCs na fogueira Halfway Fortress para desbloquear eventos futuros no Santuário do Elo de Fogo.</li>
+    <li>Mantenha resistência alta — a área tem vários inimigos que atacam em grupo.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> O Caminho dos Sacrifícios é uma área curta, mas crucial para o progresso das quests de magia e dos personagens Anri e Horace. 
+    Também conecta duas regiões principais do jogo, tornando-se um ponto estratégico para quem busca a platina completa.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2> Catedral das Profundezas (Cathedral of the Deep)</h2>
+
+  <p>
+    A Catedral das Profundezas é uma das áreas centrais de Dark Souls III, caracterizada por sua atmosfera sombria e arquitetura gótica. 
+    Ela abriga o chefe <strong>Deacons of the Deep</strong>, cuja derrota é necessária para prosseguir na jornada principal e obter o item que destrava novas rotas em Lothric.  
+    É também um ponto importante para missões de diversos NPCs.  
+    (<a href="https://darksouls.fandom.com/wiki/Cathedral_of_the_Deep" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Chegando da fogueira “Caminho dos Sacrifícios”, siga até a área da Catedral e ative a fogueira de entrada.</li>
+    <li>Avance enfrentando inimigos cavaleiros e criaturas deformadas. Explore os lados da catedral para abrir atalhos.</li>
+    <li>Suba as escadas externas até o grande salão e ative o elevador que leva à área superior.</li>
+    <li>Derrote inimigos e explore as torres laterais — uma delas leva a uma fogueira secreta próxima ao altar principal.</li>
+    <li>Prossiga até o salão central para enfrentar o chefe <strong>Deacons of the Deep</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Anri de Astora e Horace, o Silencioso:</strong> aparecem próximos à entrada da Catedral. Falar com eles aqui é essencial para o progresso de suas quests.</li>
+    <li><strong>Sirius da Terra Escura:</strong> tem parte de sua linha de missão conectada a eventos que ocorrem após a derrota dos Deacons.</li>
+    <li><strong>Patches, o Trapaceiro:</strong> pode ser encontrado tentando enganar o jogador em uma ponte. É importante poupá-lo para liberar seu comércio no Santuário.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Fragmento de Estus</strong></td>
+      <td>Encontrado próximo ao pátio externo da Catedral</td>
+      <td>Aumenta o número de usos do Estus Flask</td>
+    </tr>
+    <tr>
+      <td><strong>Bone Shard</strong></td>
+      <td>No altar principal após derrotar inimigos</td>
+      <td>Permite reforçar a cura do Estus Flask</td>
+    </tr>
+    <tr>
+      <td><strong>Anel do Clérigo</strong></td>
+      <td>No topo de uma das torres laterais</td>
+      <td>Aumenta o atributo de Fé</td>
+    </tr>
+    <tr>
+      <td><strong>Armadura do Catarina (Siegward)</strong></td>
+      <td>Obtida ao ajudar Siegward e derrotar o demônio de fogo</td>
+      <td>Necessária para sua quest e troféu associado</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Explore bem os atalhos: há múltiplas rotas que facilitam o acesso ao chefe e reduzem o tempo de retorno.</li>
+    <li>Os inimigos da área são vulneráveis a fogo — use piromancias ou armas encantadas para vantagem.</li>
+    <li>Fale com Patches antes de derrotar o chefe para garantir que sua questline avance corretamente.</li>
+    <li>Antes da luta com os Deacons, elimine os inimigos menores rapidamente para evitar que o chefe recupere vida.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> A Catedral das Profundezas é uma área extensa e cheia de rotas alternativas, essencial para completar várias missões de NPCs e obter fragmentos valiosos. 
+    A vitória sobre os Deacons of the Deep marca um avanço importante na jornada rumo à platina.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2> Pântano de Farron (Farron Keep)</h2>
+
+  <p>
+    O Pântano de Farron é uma das áreas mais desafiadoras do início de Dark Souls III, conhecida por seu terreno pantanoso que envenena o jogador ao caminhar. 
+    É o lar dos <strong>Vigilantes do Abismo (Abyss Watchers)</strong>, um dos chefes mais icônicos do jogo e peça-chave para a progressão principal.  
+    (<a href="https://darksouls.fandom.com/wiki/Farron_Keep" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Chegando da Catedral das Profundezas, desça até o pântano e acenda a primeira fogueira próxima à entrada.</li>
+    <li>Explore a área lentamente, utilizando o terreno elevado sempre que possível para evitar o acúmulo de veneno.</li>
+    <li>Seu principal objetivo é acender as três tochas gigantes espalhadas pelo pântano, o que abrirá o portão para o chefe.</li>
+    <li>Enquanto explora, fique atento a inimigos como caranguejos gigantes, grus e cavaleiros corruptos.</li>
+    <li>Após acender todas as tochas, siga até o portão do santuário para enfrentar os <strong>Vigilantes do Abismo</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Siegward de Catarina:</strong> pode ser encontrado adormecido em um poço próximo à área, parte crucial de sua quest.</li>
+    <li><strong>Anri de Astora:</strong> aparece novamente aqui, dependendo de suas escolhas anteriores na Catedral.</li>
+    <li><strong>Orbeck de Vinheim:</strong> pode ser recrutado como mestre de feitiços, caso ainda não tenha sido encontrado.</li>
+    <li><strong>Velka, a Deusa do Pecado:</strong> há um santuário oculto dedicado a ela, onde é possível pedir absolvição.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Fragmento de Estus</strong></td>
+      <td>Próximo à fogueira central do pântano</td>
+      <td>Aumenta o número de frascos de Estus</td>
+    </tr>
+    <tr>
+      <td><strong>Undead Bone Shard</strong></td>
+      <td>Na área superior próxima à torre das tochas</td>
+      <td>Melhora a eficácia da cura do Estus Flask</td>
+    </tr>
+    <tr>
+      <td><strong>Anel do Lobo</strong></td>
+      <td>Obtido após unir-se aos Vigilantes de Farron</td>
+      <td>Aumenta significativamente a resistência a desequilíbrio (poise)</td>
+    </tr>
+    <tr>
+      <td><strong>Juramento dos Vigilantes de Farron</strong></td>
+      <td>Após derrotar os Vigilantes do Abismo</td>
+      <td>Permite participar do pacto e obter recompensas PvP</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Use o anel ou o escudo com resistência a veneno para explorar com mais segurança.</li>
+    <li>Evite correr por longos períodos no pântano — mantenha a estamina para possíveis emboscadas.</li>
+    <li>Acenda as tochas em sequência lógica (direita, esquerda, centro) para reduzir o tempo de exposição.</li>
+    <li>O chefe Vigilantes do Abismo tem duas fases — na primeira, aproveite a ajuda dos clones que atacam os outros inimigos.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> O Pântano de Farron é um teste de resistência e paciência, onde o gerenciamento de veneno e estamina é crucial. 
+    Ao derrotar os Vigilantes do Abismo, o jogador desbloqueia acesso à próxima grande região: <strong>Catacumbas de Carthus</strong>.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2> Catacumbas de Carthus (Catacombs of Carthus)</h2>
+
+  <p>
+    As Catacumbas de Carthus são um labirinto subterrâneo cheio de armadilhas, esqueletos que revivem e passagens secretas. 
+    É uma área que conecta o Pântano de Farron ao Lago Ardente e serve de lar para o chefe <strong>High Lord Wolnir</strong>.  
+    (<a href="https://darksouls.fandom.com/wiki/Catacombs_of_Carthus" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Logo ao entrar nas catacumbas, siga pelo corredor principal até a primeira fogueira.</li>
+    <li>Avance com cuidado: muitos esqueletos revivem após a morte — ataque novamente quando eles se levantarem.</li>
+    <li>Procure por pontes que podem ser derrubadas para abrir atalhos e acesso a áreas secretas.</li>
+    <li>Explore cada canto para encontrar itens importantes, mas fique atento a armadilhas no chão e nas paredes.</li>
+    <li>Ao final do labirinto, atravesse a névoa para enfrentar o chefe <strong>High Lord Wolnir</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Horace, o Silencioso:</strong> parte da quest de <strong>Anri de Astora</strong>; pode ser encontrado em uma área oculta perto da ponte.</li>
+    <li><strong>Anri de Astora:</strong> aparece novamente aqui; é crucial conversar com ela para não perder a progressão da quest.</li>
+    <li><strong>Pyromancer Cornyx:</strong> caso ainda não tenha sido recrutado, pode ser encontrado no caminho alternativo.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Bone Shard</strong></td>
+      <td>Encontrado em uma plataforma alta perto de uma roda gigante de esqueletos</td>
+      <td>Aumenta a eficácia do Estus Flask</td>
+    </tr>
+    <tr>
+      <td><strong>Anel do Carthus Milkring</strong></td>
+      <td>Dropado por um esqueleto inimigo em um corredor lateral</td>
+      <td>Aumenta destreza e reduz detecção durante esquivas</td>
+    </tr>
+    <tr>
+      <td><strong>Carthus Rouge</strong></td>
+      <td>Espalhado em cadáveres e baús</td>
+      <td>Encanta armas com efeito de sangramento</td>
+    </tr>
+    <tr>
+      <td><strong>Espada Curva de Carthus</strong></td>
+      <td>Drop raro dos esqueletos guerreiros</td>
+      <td>Arma leve e rápida, ótima para builds de destreza</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Carregue uma tocha para afastar esqueletos que se reanimam e iluminar as passagens escuras.</li>
+    <li>Tenha cuidado com as armadilhas de lâminas e bolas rolantes; observe o padrão antes de avançar.</li>
+    <li>Use armas com ataque em área para lidar com grupos de inimigos ressurgindo.</li>
+    <li>O chefe <strong>Wolnir</strong> só pode ser ferido destruindo os braceletes dourados em seus braços — evite se aproximar demais de sua névoa negra.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> As Catacumbas de Carthus exigem atenção constante a armadilhas e inimigos persistentes. 
+    Além disso, é uma área importante para a progressão da quest de <strong>Anri de Astora</strong> e para obter materiais de upgrade e anéis úteis para builds de destreza.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2> Lago Ardente (Smouldering Lake)</h2>
+
+  <p>
+    O Lago Ardente é uma área secreta acessada derrubando a ponte nas Catacumbas de Carthus.  
+    Este local é repleto de inimigos poderosos, armadilhas de fogo e segredos escondidos, incluindo o chefe opcional <strong>Antigo Rei Demônio</strong>.  
+    Apesar de ser opcional, é uma área essencial para quem busca o 100%, devido à presença de anéis, piromancias raras e itens de upgrade.  
+    (<a href="https://darksouls.fandom.com/wiki/Smouldering_Lake" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Após derrubar a ponte nas Catacumbas de Carthus, desça com cuidado para alcançar a entrada do Lago Ardente.</li>
+    <li>Logo ao entrar, encontrará uma área aberta sob fogo constante de uma <strong>balista gigante</strong>; use o terreno e obstáculos para se proteger.</li>
+    <li>Avance até encontrar a fogueira inicial próxima à margem do lago.</li>
+    <li>Explore os túneis e ruínas demoníacas conectadas ao antigo Domínio do Caos.</li>
+    <li>No final da área, atravesse a névoa para enfrentar o chefe opcional <strong>Antigo Rei Demônio</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Karla, a Bruxa:</strong> Pode ser libertada das celas nas ruínas demoníacas — fundamental para quem deseja todas as feitiçarias e piromancias.</li>
+    <li><strong>Horace, o Silencioso:</strong> Se ainda não foi encontrado nas catacumbas, ele estará aqui como inimigo hostil em uma área subterrânea próxima ao lago.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Piromancia "Chaos Bed Vestiges"</strong></td>
+      <td>Drop do chefe <strong>Antigo Rei Demônio</strong></td>
+      <td>Feitiço de fogo poderoso, essencial para builds de piromancia</td>
+    </tr>
+    <tr>
+      <td><strong>Anel da Bruxa</strong></td>
+      <td>Em um cadáver dentro das ruínas</td>
+      <td>Aumenta o dano de piromancias</td>
+    </tr>
+    <tr>
+      <td><strong>Grande Fragmento de Titanita</strong></td>
+      <td>Espalhado em baús e drops dos demônios</td>
+      <td>Usado para aprimorar armas até +6</td>
+    </tr>
+    <tr>
+      <td><strong>Estus Shard</strong></td>
+      <td>Próximo à sala com os demônios de fogo</td>
+      <td>Aumenta o número de frascos de Estus disponíveis</td>
+    </tr>
+    <tr>
+      <td><strong>Chama de Piromancia do Grande Pântano</strong></td>
+      <td>Em um corpo próximo ao lago</td>
+      <td>Permite usar piromancias mais poderosas</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Desative a balista gigante acessando a torre no canto esquerdo do mapa — isso facilita a exploração completa do lago.</li>
+    <li>Use armaduras com alta resistência a fogo e anéis como o <strong>Flame Stoneplate Ring</strong> para reduzir dano elemental.</li>
+    <li>Explore cuidadosamente as paredes das ruínas; há várias passagens falsas escondendo baús e piromancias.</li>
+    <li>O chefe <strong>Antigo Rei Demônio</strong> é vulnerável a ataques físicos rápidos e esquivas laterais — evite ataques frontais prolongados.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> O Lago Ardente é uma área opcional, mas vital para quem busca todas as piromancias, anéis e materiais de upgrade.  
+    Com inimigos poderosos e armadilhas de fogo, recompensa os jogadores que exploram cada canto com atenção e estratégia.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2> Irithyll do Vale Boreal (Irithyll of the Boreal Valley)</h2>
+
+  <p>
+    Irithyll do Vale Boreal é uma das áreas mais icônicas e visualmente impressionantes de <strong>Dark Souls III</strong>.  
+    Uma cidade congelada banhada por luz de luar, lar de inimigos poderosos e chefes cruciais para o avanço da história.  
+    Aqui o jogador enfrentará o <strong>Pontífice Sulyvahn</strong> e encontrará conexões importantes com as questlines de Anri, Yorshka e Aldrich.  
+    (<a href="https://darksouls.fandom.com/wiki/Irithyll_of_the_Boreal_Valley" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Após derrotar os Vigilantes do Abismo em Farron, use o altar para desbloquear o caminho até Irithyll.</li>
+    <li>Ao chegar, ative a fogueira inicial <strong>Irithyll of the Boreal Valley</strong>.</li>
+    <li>Avance pela ponte principal, onde será emboscado por um <strong>Wyvern Invisível</strong> (cachorro demoníaco de gelo); derrote-o para prosseguir.</li>
+    <li>Continue explorando a cidade, derrotando cavaleiros de Irithyll e inimigos mágicos.</li>
+    <li>Ative o atalho próximo à fogueira <strong>Church of Yorshka</strong> — ponto central da área e local importante para várias missões.</li>
+    <li>No fim da zona, atravesse a névoa para enfrentar o chefe <strong>Pontífice Sulyvahn</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Anri de Astora:</strong> NPC fundamental para os finais do jogo; pode ser encontrado na Igreja de Yorshka.  
+      Suas decisões aqui influenciam diretamente o final “Senhor das Trevas”.</li>
+    <li><strong>Yorshka:</strong> Localizada na torre próxima à igreja, é a líder da <strong>Blades of the Darkmoon</strong> — essencial para troféus de pactos.</li>
+    <li><strong>Alva, Cavaleiro Espiritual:</strong> Invasor que aparece próximo à entrada da igreja, concedendo o item <strong>Espada de Alva</strong>.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Anel do Dragão de Prata</strong></td>
+      <td>Obtido próximo à estátua de Yorshka</td>
+      <td>Permite pertencer ao pacto “Blades of the Darkmoon”</td>
+    </tr>
+    <tr>
+      <td><strong>Grande Fragmento de Titanita</strong></td>
+      <td>Drop comum de cavaleiros de Irithyll</td>
+      <td>Usado para aprimorar armas até +6</td>
+    </tr>
+    <tr>
+      <td><strong>Anel de Clorantia +1</strong></td>
+      <td>Versão aprimorada obtida na área congelada (NG+)</td>
+      <td>Aumenta regeneração de vigor</td>
+    </tr>
+    <tr>
+      <td><strong>Boneco Pequeno (Small Doll)</strong></td>
+      <td>Necessário para acessar Irithyll, obtido ao derrotar o chefe dos Diáconos das Profundezas</td>
+      <td>Permite atravessar a barreira mágica de entrada</td>
+    </tr>
+    <tr>
+      <td><strong>Milagre “Lâmina Relâmpago”</strong></td>
+      <td>Localizado em um corpo atrás da igreja</td>
+      <td>Milagre ofensivo poderoso, essencial para builds de fé</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Use armas com dano de fogo ou físico contra inimigos de gelo, que possuem fraqueza a esse tipo de dano.</li>
+    <li>Evite lutas em espaços abertos com múltiplos cavaleiros; atraia-os um por vez.</li>
+    <li>Fale com Anri na Igreja antes de enfrentar Sulyvahn para garantir a continuidade de sua missão.</li>
+    <li>Explore as torres e sacadas — há atalhos e baús ocultos com itens raros.</li>
+    <li>O chefe <strong>Pontífice Sulyvahn</strong> é um dos combates mais intensos do jogo; use o ambiente e timing preciso de esquiva.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> Irithyll do Vale Boreal é uma área crucial na história principal e repleta de conteúdo essencial para a platina.  
+    Aqui o jogador enfrenta um dos chefes mais difíceis do jogo e encontra NPCs ligados a múltiplos finais, pactos e magias únicas.
+  </p>
+
+</div>
+<div class="area-container">
+
+  <h2> Prisão de Irithyll (Irithyll Dungeon)</h2>
+
+  <p>
+    A <strong>Prisão de Irithyll</strong> é uma área sombria e opressora localizada após Irithyll do Vale Boreal.  
+    Este local é repleto de inimigos que drenam sua vida máxima e aprisionam o jogador em espaços estreitos, tornando a exploração tensa e perigosa.  
+    É uma zona fundamental para o avanço em direção à <strong>Capital Profanada</strong>, além de conter NPCs e itens importantes para a platina.  
+    (<a href="https://darksouls.fandom.com/wiki/Irithyll_Dungeon" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Após derrotar o <strong>Pontífice Sulyvahn</strong>, siga pela catedral e atravesse a ponte até alcançar a entrada da Prisão de Irithyll.</li>
+    <li>Ative a primeira fogueira <strong>Irithyll Dungeon</strong>.</li>
+    <li>Avance pelos corredores observando os <strong>Carcereiros</strong> — inimigos capazes de reduzir temporariamente sua vida máxima.</li>
+    <li>Desça pelos níveis inferiores abrindo grades e ativando atalhos entre celas.</li>
+    <li>Encontre a cela que contém o NPC <strong>Karla, a Bruxa</strong> (necessário possuir a chave especial para libertá-la).</li>
+    <li>No fim da área, encontrará o elevador que leva à <strong>Capital Profanada</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Karla, a Bruxa:</strong> Encarcerada em uma cela trancada.  
+      Libere-a para desbloquear feitiçarias e piromancias sombrias — essencial para o troféu de magias completas.</li>
+    <li><strong>Siegward de Catarina:</strong> Pode ser encontrado preso em uma cela próxima à passagem para a Capital Profanada; libertá-lo é parte crucial da sua questline.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Chave da Cela</strong></td>
+      <td>Em uma área próxima aos Carcereiros, necessária para libertar NPCs</td>
+      <td>Permite acesso às celas de Karla e Siegward</td>
+    </tr>
+    <tr>
+      <td><strong>Anel de Estímulo</strong></td>
+      <td>Encontrado em um corpo nas passagens inferiores</td>
+      <td>Aumenta a recuperação de vigor</td>
+    </tr>
+    <tr>
+      <td><strong>Grande Fragmento de Titanita</strong></td>
+      <td>Drop dos Cavaleiros de Irithyll que patrulham os corredores</td>
+      <td>Usado para aprimorar armas até +6</td>
+    </tr>
+    <tr>
+      <td><strong>Osso de Guardião do Fogo</strong></td>
+      <td>Em uma cela isolada na área inferior</td>
+      <td>Usado para melhorar os frascos de Estus</td>
+    </tr>
+    <tr>
+      <td><strong>Livro de Piromancia Profanada</strong></td>
+      <td>Próximo à saída para a Capital Profanada</td>
+      <td>Permite aprender piromancias avançadas</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Evite enfrentar múltiplos Carcereiros ao mesmo tempo — seus ataques reduzem seu HP máximo rapidamente.</li>
+    <li>Use anéis como o <strong>Cursebite Ring</strong> ou armaduras com resistência a magia e maldição.</li>
+    <li>Libere Siegward e Karla antes de prosseguir — ambos influenciam troféus de NPCs e magias.</li>
+    <li>Explore cada cela, pois várias delas contêm itens raros e atalhos escondidos.</li>
+    <li>O caminho para a Capital Profanada fica no final da prisão, acessível pelo elevador central.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> A Prisão de Irithyll é uma das áreas mais perigosas do jogo, mas também uma das mais recompensadoras.  
+    Além de conter NPCs vitais para o 100%, oferece acesso direto à Capital Profanada e a itens que fortalecem o personagem para o fim do jogo.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2> Capital Profanada (Profaned Capital)</h2>
+
+  <p>
+    A <strong>Capital Profanada</strong> é uma área pequena, mas extremamente perigosa, situada após a <strong>Prisão de Irithyll</strong>.  
+    Seu ambiente é repleto de inimigos fortes e um dos chefes mais importantes do jogo: <strong>Yhorm, o Gigante</strong>.  
+    Aqui também é possível concluir a <strong>questline de Siegward de Catarina</strong> e encontrar itens raros para o progresso rumo à platina.  
+    (<a href="https://darksouls.fandom.com/wiki/Profaned_Capital" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3> Caminho Principal</h3>
+  <ol>
+    <li>Ao sair da <strong>Prisão de Irithyll</strong>, use o elevador para chegar à fogueira inicial da Capital Profanada.</li>
+    <li>Explore o telhado do prédio principal, enfrentando <strong>Gárgulas de Pedra</strong> e coletando itens nas bordas.</li>
+    <li>Desça pelas ruínas até encontrar a entrada para o salão de Yhorm.</li>
+    <li>Antes de enfrentar o chefe, explore a área lateral onde Siegward pode ser encontrado, caso sua questline esteja ativa.</li>
+    <li>Prepare-se e entre na arena para enfrentar <strong>Yhorm, o Gigante</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> NPCs Importantes</h3>
+  <ul>
+    <li><strong>Siegward de Catarina:</strong> Aparece para auxiliar na luta contra Yhorm, caso sua quest tenha sido completada corretamente.  
+      Participar dessa batalha com ele é essencial para concluir sua história e garantir recompensas únicas.</li>
+  </ul>
+
+  <hr>
+
+  <h3> Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Espada da Tempestade (Storm Ruler)</strong></td>
+      <td>Na arena de Yhorm, à esquerda da entrada</td>
+      <td>Arma essencial para derrotar o chefe; seu poder é ativado ao carregá-la</td>
+    </tr>
+    <tr>
+      <td><strong>Grande Fragmento de Titanita</strong></td>
+      <td>Espalhado entre as ruínas e telhados</td>
+      <td>Usado para aprimorar armas até +6</td>
+    </tr>
+    <tr>
+      <td><strong>Anel de Chamas Profanadas</strong></td>
+      <td>Dentro das ruínas próximas à torre principal</td>
+      <td>Aumenta o dano de fogo</td>
+    </tr>
+    <tr>
+      <td><strong>Livro de Piromancia Profanada</strong></td>
+      <td>Encontrado em uma sala próxima ao início da área</td>
+      <td>Permite aprender piromancias avançadas de fogo profano</td>
+    </tr>
+    <tr>
+      <td><strong>Human Pine Resin</strong></td>
+      <td>Em corpos espalhados pela área inferior</td>
+      <td>Aplica dano sombrio às armas temporariamente</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3> Dicas Estratégicas</h3>
+  <ul>
+    <li>Evite cair nas bordas do telhado — as Gárgulas podem empurrar facilmente para a morte.</li>
+    <li>Use a <strong>Storm Ruler</strong> contra Yhorm; sem ela, a luta é praticamente inviável.</li>
+    <li>Se Siegward estiver vivo e sua questline concluída, ele lutará ao seu lado contra o chefe.</li>
+    <li>Após derrotar Yhorm, você será automaticamente transportado de volta para Lothric, iniciando a sequência dos Lordes das Cinzas.</li>
+    <li>Explore com cuidado, pois há muitos inimigos fortes e áreas com queda mortal.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> A Capital Profanada é uma área curta, porém marcante, servindo como conclusão da jornada de Siegward e palco de uma das batalhas mais simbólicas de Dark Souls III.  
+    Após derrotar Yhorm, o jogador se aproxima do final da jornada, com o retorno à Firelink Shrine e a próxima etapa rumo ao Castelo de Lothric.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Castelo de Lothric (Lothric Castle)</h2>
+
+  <p>
+    O <strong>Castelo de Lothric</strong> é uma das áreas finais de <em>Dark Souls III</em>, marcada por inimigos poderosos, cavaleiros de elite e dragões que sobrevoam as muralhas.  
+    Aqui o jogador avança em direção aos últimos Lordes das Cinzas e enfrenta alguns dos desafios mais intensos do jogo.  
+    É também o ponto de convergência de várias <strong>questlines de NPCs</strong> e um local essencial para a progressão rumo à platina.  
+    (<a href="https://darksouls.fandom.com/wiki/Lothric_Castle" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3>Caminho Principal</h3>
+  <ol>
+    <li>Após derrotar Yhorm e Aldrich, você será teleportado para a <strong>Fogueira do Castelo de Lothric</strong>.</li>
+    <li>Suba as escadarias enfrentando <strong>Cavaleiros de Lothric</strong> e <strong>Cavaleiros Alados</strong> enquanto evita o fogo dos dragões.</li>
+    <li>Desative os dragões atirando em seus pontos fracos ou avançando pelos flancos do castelo até que morram.</li>
+    <li>Explore as torres laterais para encontrar atalhos e itens valiosos, como <strong>Fragmentos de Titanita</strong> e <strong>Anéis</strong>.</li>
+    <li>Prossiga até a grande porta que leva ao chefe <strong>Dragões Gêmeos</strong> (Lothric Wyverns) e, após vencê-los, ative a próxima fogueira.</li>
+    <li>Continue subindo até o topo do castelo para encontrar o caminho que leva aos <strong>Irmãos Príncipes</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3>NPCs Importantes</h3>
+  <ul>
+    <li><strong>Sirris de Sunless Realms:</strong> pode aparecer aqui se sua quest estiver em andamento, oferecendo ajuda contra chefes.</li>
+    <li><strong>Eygon de Carim:</strong> pode ser encontrado morto em estágios avançados, deixando seu equipamento.</li>
+    <li><strong>Greirat:</strong> caso tenha sido enviado para saquear Lothric sem a ajuda de Patches, ele morre nesta área.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Grande Fragmento de Titanita</strong></td>
+      <td>Encontrado em baús e drops de cavaleiros</td>
+      <td>Usado para melhorar armas até +6</td>
+    </tr>
+    <tr>
+      <td><strong>Fragmento de Titanita Cintilante</strong></td>
+      <td>Espalhado em locais escondidos e perto dos dragões</td>
+      <td>Usado para aprimorar armas únicas</td>
+    </tr>
+    <tr>
+      <td><strong>Anel da Princesa do Sol</strong></td>
+      <td>Encontrado em uma sala lateral após derrotar os dragões</td>
+      <td>Aumenta a regeneração de HP</td>
+    </tr>
+    <tr>
+      <td><strong>Estus Shard</strong></td>
+      <td>Em um corpo perto da segunda fogueira</td>
+      <td>Aumenta o número de frascos de Estus</td>
+    </tr>
+    <tr>
+      <td><strong>Espada do Cavaleiro de Lothric</strong></td>
+      <td>Drop raro dos Cavaleiros de Lothric</td>
+      <td>Uma das melhores armas para builds de Destreza</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Dicas Estratégicas</h3>
+  <ul>
+    <li>Use ataques à distância para lidar com os dragões até que eles se retirem.</li>
+    <li>Tenha cuidado com emboscadas — muitos cavaleiros atacam em duplas.</li>
+    <li>Certifique-se de explorar todas as torres; há atalhos e baús que economizam tempo e risco.</li>
+    <li>As armas com dano de relâmpago são eficazes contra os inimigos da área.</li>
+    <li>Salve antes de prosseguir para os <strong>Irmãos Príncipes</strong> — o penúltimo grande desafio do jogo.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> O Castelo de Lothric representa o auge da jornada do jogador.  
+    É uma área de transição para os eventos finais, exigindo domínio do combate e preparo máximo.  
+    Após vencer os chefes locais, o caminho estará aberto para o <strong>Grande Arquivo</strong>, última área principal antes do desfecho.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Grande Arquivo (Grand Archives)</h2>
+
+  <p>
+    O <strong>Grande Arquivo</strong> é a última grande área de <em>Dark Souls III</em>, repleta de magos poderosos, cavaleiros encantados e inúmeros segredos.  
+    Este local funciona como uma imensa biblioteca encantada, guardando os conhecimentos proibidos de Lothric e servindo como o último obstáculo antes da batalha final.  
+    É também uma área essencial para troféus e quests de NPCs, contendo armas únicas, magias raras e atalhos interligados.  
+    (<a href="https://darksouls.fandom.com/wiki/Grand_Archives" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3>Caminho Principal</h3>
+  <ol>
+    <li>Após derrotar os <strong>Irmãos Príncipes</strong> em Lothric Castle, obtenha a <strong>Chave do Grande Arquivo</strong> e acesse o portão principal.</li>
+    <li>Ative a <strong>fogueira inicial</strong> do Grande Arquivo logo na entrada.</li>
+    <li>Avance pelos corredores enfrentando os <strong>Eruditos do Cristal</strong> e inimigos mágicos que lançam feitiços em grupo.</li>
+    <li>Evite a névoa de cera amaldiçoada; use as piscinas de cera branca para se proteger de maldições e petrificações.</li>
+    <li>Explore os andares superiores e acione os elevadores para criar atalhos de retorno.</li>
+    <li>Derrote o mini-boss <strong>Erudito do Cristal Renascido</strong> que reaparece em várias partes da área.</li>
+    <li>No terraço superior, enfrente os <strong>Três Cavaleiros de Lothric</strong> para liberar o acesso ao telhado final.</li>
+    <li>No final, alcance a fogueira após derrotar o trio e siga até o portão que leva ao chefe final do jogo.</li>
+  </ol>
+
+  <hr>
+
+  <h3>NPCs Importantes</h3>
+  <ul>
+    <li><strong>Orbeck de Vinheim:</strong> se ainda estiver vivo e tiver recebido todos os pergaminhos, ele aparecerá aqui com feitiços únicos antes de desaparecer definitivamente.</li>
+    <li><strong>Gotthard:</strong> seu sinal de invocação pode ser encontrado perto da entrada, auxiliando contra os Cavaleiros e bosses da área.</li>
+    <li><strong>Black Hand Kamui:</strong> outro aliado disponível para invocação, útil especialmente nas batalhas do topo.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Cera Branca</strong></td>
+      <td>Fontes de cera espalhadas pelo mapa</td>
+      <td>Protege contra maldições e petrificação</td>
+    </tr>
+    <tr>
+      <td><strong>Fragmento de Titanita Cintilante</strong></td>
+      <td>Em prateleiras e telhados acessíveis por atalhos</td>
+      <td>Melhora armas únicas</td>
+    </tr>
+    <tr>
+      <td><strong>Crystal Scroll</strong></td>
+      <td>Encontrado em um corpo próximo ao primeiro Erudito do Cristal</td>
+      <td>Permite ensinar feitiços cristalinos a Orbeck</td>
+    </tr>
+    <tr>
+      <td><strong>Anel do Sábio</strong></td>
+      <td>Andar superior, perto das escadas que levam ao terraço</td>
+      <td>Aumenta a velocidade de conjuração</td>
+    </tr>
+    <tr>
+      <td><strong>Tomo Divino de Lothric</strong></td>
+      <td>Em uma sala lateral após o segundo elevador</td>
+      <td>Desbloqueia novos milagres para a Fire Keeper</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Dicas Estratégicas</h3>
+  <ul>
+    <li>Use constantemente a <strong>cera branca</strong> para evitar amaldiçoamentos.</li>
+    <li>O fogo e relâmpago são eficazes contra magos e cavaleiros encantados.</li>
+    <li>Ative todos os elevadores antes de prosseguir — isso facilita retornar e explorar áreas esquecidas.</li>
+    <li>Invocar Gotthard pode facilitar a batalha final do telhado.</li>
+    <li>Explore os telhados cuidadosamente; há caminhos ocultos com <strong>Itens de Titanita</strong> e <strong>magias exclusivas</strong>.</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> O Grande Arquivo é o ponto culminante da exploração em Lothric.  
+    Uma área complexa, com inimigos poderosos, inúmeros segredos e recompensas essenciais para a platina.  
+    Após concluir esta região, o jogador estará pronto para o confronto final no <strong>Fornalha da Primeira Chama</strong>.
+  </p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Fornalha da Primeira Chama (Kiln of the First Flame)</h2>
+
+  <p>
+    A <strong>Fornalha da Primeira Chama</strong> é a área final de <em>Dark Souls III</em>, acessível após derrotar os <strong>Irmãos Príncipes</strong> e colocar suas cinzas nos tronos do <strong>Santuário do Elo de Fogo</strong>.  
+    Este local simboliza o ciclo eterno do fogo e das trevas, sendo o palco do confronto final contra a <strong>Alma das Cinzas (Soul of Cinder)</strong>.  
+    Não há inimigos comuns, apenas um vasto campo de cinzas e a presença do último desafio do jogo.  
+    (<a href="https://darksouls.fandom.com/wiki/Kiln_of_the_First_Flame" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+
+  <hr>
+
+  <h3>Caminho Principal</h3>
+  <ol>
+    <li>Após colocar as Cinzas dos Lordes nos tronos, fale com a <strong>Guardião do Fogo</strong> no Santuário.</li>
+    <li>Escolha a opção “<em>To the Kiln of the First Flame</em>” para ser transportado automaticamente até a área.</li>
+    <li>Ao chegar, ative a <strong>fogueira inicial</strong> da Fornalha e avance pelo caminho linear coberto de cinzas.</li>
+    <li>Observe o ambiente desolado — este cenário simboliza o mundo consumido pelo fogo e pela passagem do tempo.</li>
+    <li>No final do caminho, a névoa levará você ao <strong>chefe final: Alma das Cinzas</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Chefe Final – Alma das Cinzas (Soul of Cinder)</h3>
+  <ul>
+    <li>Este chefe representa todos os Lordes das Cinzas anteriores e o poder acumulado do ciclo do fogo.</li>
+    <li>Durante a luta, alterna entre estilos de combate (magia, piromancia, milagres e corpo a corpo).</li>
+    <li>Na segunda fase, assume o estilo de luta do <strong>Gwyn, Lorde da Luz Solar</strong>, usando ataques rápidos e poderosos de fogo.</li>
+    <li>Recomenda-se o uso de <strong>armaduras leves</strong> para mobilidade e <strong>armas de relâmpago</strong> ou <strong>magia negra</strong>, eficazes contra o chefe.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Itens Relevantes</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Localização</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Alma das Cinzas</strong></td>
+      <td>Drop do chefe final</td>
+      <td>Usada para criar armas de chefe na Transposição de Almas</td>
+    </tr>
+    <tr>
+      <td><strong>Alma de Gwyn (transposição)</strong></td>
+      <td>Obtida ao transpor a alma final</td>
+      <td>Permite criar a Espada Sagrada do Fogo ou o Milagre Chama do Fim</td>
+    </tr>
+    <tr>
+      <td><strong>Fogueira Final</strong></td>
+      <td>Surge após derrotar o chefe</td>
+      <td>Permite escolher o final do jogo</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Finais Possíveis</h3>
+  <ul>
+    <li><strong>Link the First Flame:</strong> Acenda a fogueira final e sacrifique-se para reacender a chama.</li>
+    <li><strong>The End of Fire:</strong> Recuse-se a acender a chama e fale com a Guardiã do Fogo para encerrar o ciclo.</li>
+    <li><strong>Usurpation of Fire:</strong> Final obtido com a <strong>questline completa de Yuria e Anri</strong>, tomando a chama para si.</li>
+  </ul>
+
+  <p>
+    💡 <strong>Final Recomendado para a Primeira Jornada:</strong> <em>Usurpation of Fire</em> — este final é considerado o mais completo para o primeiro ciclo (<strong>NG</strong>), pois envolve várias missões importantes, concede o troféu “Lorde das Trevas” e garante a progressão ideal para o New Game+.
+  </p>
+
+  <hr>
+
+  <h3>Dicas Estratégicas</h3>
+  <ul>
+    <li>O chefe é vulnerável a <strong>magia e relâmpago</strong> — use feitiços de longo alcance se possível.</li>
+    <li>Durante a segunda fase, esquive no momento em que ele erguer a espada flamejante — o ataque seguinte é devastador.</li>
+    <li>Evite usar armaduras muito pesadas; mobilidade é essencial para escapar das combinações rápidas do chefe.</li>
+    <li>Após vencer, observe o cenário final e escolha com cuidado o final que deseja desbloquear (cada um é necessário para a platina).</li>
+  </ul>
+
+  <p>
+    <strong>Resumo:</strong> A Fornalha da Primeira Chama é o desfecho de toda a jornada.  
+    Aqui o jogador confronta o ciclo do fogo e faz sua escolha final, determinando o destino do mundo.  
+    Após concluir a área, todos os finais podem ser revisitados em New Game+ para completar os troféus restantes.
+  </p>
+
+</div>
+
+
+  </div>  <!-- Conteúdo principal -->
+
+  
+
+
+</body>
+</html>
+

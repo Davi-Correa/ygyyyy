@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Intro - Dark Souls Wiki</title>
+  <style>
+    html,body{height:100%;margin:0;background:#000;overflow:hidden}
+    /* container full-screen */
+    #intro {
+      position:fixed; inset:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      background:black;
+    }
+
+    /* imagem central da fogueira */
+    #fogueira {
+      width: 820px;           /* ajuste o tamanho desejado (16:9 feel) */
+      max-width: 90%;
+      transition: transform 0.6s ease, filter 0.6s ease, opacity 0.6s ease;
+      opacity: 1;
+    }
+
+    /* quando a fogueira "acende" */
+    #fogueira.acesa {
+      transform: scale(1.06);
+      filter: brightness(1.9) drop-shadow(0 0 40px #050505);
+    }
+
+    /* botão entrar */
+    #entrar {
+      margin-top: 28px;
+      padding: 12px 26px;
+      background: rgba(255,100,0,0.08);
+      color: #ffb86b;
+      border: 2px solid #ff8a1a;
+      border-radius: 8px;
+      cursor:pointer;
+      font-size: 1rem;
+    }
+    #entrar:hover{ background:#ff8a1a; color:#000; transform:scale(1.03); }
+
+    /* quando a intro some */
+    .fade-out {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="intro" role="dialog" aria-label="Intro">
+    <!-- use o src da fogueira apagada inicialmente -->
+    <img id="fogueira" src="./media/img-abertura-inicio.png" alt="Fogueira apagada">
+    <button id="entrar">Entrar</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const fogueira = document.getElementById('fogueira');
+      const btn = document.getElementById('entrar');
+      const intro = document.getElementById('intro');
+
+      // troque pelo nome real do arquivo que você salvou
+      const acesaSrc = './media/img-abertura-fim.png'; // <- ajuste se o seu arquivo tem outro nome
+      // pré-carrega a imagem acesa pra evitar flash
+      const preload = new Image();
+      preload.src = acesaSrc;
+
+      btn.addEventListener('click', () => {
+        // se quiser tocar som, pode iniciar aqui
+
+        // quando a imagem já estiver em cache, troca imediatamente
+        if (preload.complete) {
+          fogueira.src = preload.src;
+          fogueira.classList.add('acesa');
+        } else {
+          // espera carregar a versão acesa
+          preload.onload = () => {
+            fogueira.src = preload.src;
+            fogueira.classList.add('acesa');
+          };
+          // opcional: tratamento de erro
+          preload.onerror = () => {
+            console.warn('Erro ao carregar imagem acesa:', acesaSrc);
+            // se der erro, ainda podemos continuar com o flow
+            fogueira.classList.add('acesa');
+          };
+        }
+
+        // anima e redireciona após um tempo (ajuste o delay como quiser)
+        setTimeout(() => {
+          intro.classList.add('fade-out'); // faz sumir
+        }, 700); // deixa a fogueira acesa por 0.7s antes de iniciar fade
+
+        setTimeout(() => {
+          // redireciona para a home (ou remove a intro e revela conteúdo)
+          window.location.href = 'principal.html';
+        }, 2200); // 2.2s total antes do redirecionamento
+      });
+    });
+  </script>
+
+</body>
+</html>

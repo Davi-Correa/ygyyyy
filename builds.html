@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki de Dark Souls 3</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+ <div class="menu-lateral">
+ <img src="./media/logo-menu2.png" alt="Logo Dark Souls" class="logo-menu">
+  
+ <div class="menu-links-container">
+    <a href="./principal.html">Início</a>
+    <a href="./chefes.html">Chefes</a>
+    <a href="./npcs.html">Npcs</a>
+    <a href="./builds.html">Fashion/Builds</a>
+  </div>
+
+  <div class="menu-buttons">
+    <button class="accessibility-btn" onclick="toggleAccessibility()">Acessibilidade</button>
+    <button class="toggle-btn" onclick="toggleTheme()">Mudar tema</button>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+  </div>
+</div>
+
+
+  <!-- JavaScript -->
+  <script>
+    // Alterna entre modo claro e escuro
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    // Alterna modo de alta acessibilidade
+    function toggleAccessibility() {
+      document.body.classList.toggle('high-contrast');
+    }
+
+    // Exemplo de função para ir para o menu circular
+    function goToMenu() {
+      window.location.href = 'menu.html';
+    }
+
+    window.addEventListener('load', () => {
+  document.querySelector('.conteudo').classList.add('visible');
+});
+
+// Mostra o botão quando a página rola para baixo
+  window.onscroll = function() {toggleScrollBtn()};
+
+  function toggleScrollBtn() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+  
+
+  </script>
+
+  <!-- Conteúdo principal -->
+  <div class="conteudo">
+   
+ <hr>
+    <h1 class="story-script-regular">BUILDS</h1>
+    <hr>
+<div class="area-container">
+
+  <h2>Build: [Nome da Build]</h2>
+
+  <!-- Introdução à build -->
+  <p>
+    <strong>[Nome da Build]</strong> é uma build focada em [estilo de combate, atributos principais e estilo de jogo].  
+    Ideal para jogadores que desejam [descrição curta da vantagem e jogabilidade].  
+    Aqui você encontrará os itens essenciais para otimizar a build e as áreas/chefes onde ela se destaca.
+  </p>
+
+  <hr>
+
+  <!-- Itens essenciais -->
+  <h3>🛡️ Itens Essenciais</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Tipo</th>
+      <th>Nome do Item</th>
+      <th>Descrição / Benefício</th>
+    </tr>
+    <tr>
+      <td>Arma</td>
+      <td>[Nome da arma]</td>
+      <td>[Descrição do ataque, scaling, especial]</td>
+    </tr>
+    <tr>
+      <td>Armadura</td>
+      <td>[Nome da armadura]</td>
+      <td>[Bônus de defesa, mobilidade, resistência]</td>
+    </tr>
+    <tr>
+      <td>Anel</td>
+      <td>[Nome do anel]</td>
+      <td>[Bônus ou efeito especial]</td>
+    </tr>
+    <tr>
+      <td>Talismã / Catalyst</td>
+      <td>[Nome]</td>
+      <td>[Benefício para magias, feitiços ou buffs]</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- Áreas e chefes com vantagem -->
+  <h3>⚔️ Áreas e Chefes Recomendados</h3>
+  <ul>
+    <li><strong>[Área ou chefe]:</strong> Explicação de por que a build é vantajosa aqui.</li>
+    <li><strong>[Área ou chefe]:</strong> Explicação de por que a build é vantajosa aqui.</li>
+    <li><strong>[Área ou chefe]:</strong> Explicação de por que a build é vantajosa aqui.</li>
+  </ul>
+
+  <p><em>Fonte: <a href="https://darksouls.fandom.com/wiki/Dark_Souls_III" target="_blank">Dark Souls Wiki</a></em></p>
+
+</div>
+
+
+
+
+
+
+    
+  </div>
+
+  
+
+
+</body>
+</html>
+

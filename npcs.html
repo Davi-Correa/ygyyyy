@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>npcs</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+ <div class="menu-lateral">
+ <img src="./media/logo-menu2.png" alt="Logo Dark Souls" class="logo-menu">
+  
+  <div class="menu-links-container">
+    <a href="./principal.html">Início</a>
+    <a href="./chefes.html">Chefes</a>
+    <a href="./npcs.html">Npcs</a>
+   
+  </div>
+
+  <div class="menu-buttons">
+    <button class="accessibility-btn" onclick="toggleAccessibility()">Acessibilidade</button>
+    <button class="toggle-btn" onclick="toggleTheme()">Mudar tema</button>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+  </div>
+</div>
+
+
+  <!-- JavaScript -->
+  <script>
+    // Alterna entre modo claro e escuro
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    // Alterna modo de alta acessibilidade
+    function toggleAccessibility() {
+      document.body.classList.toggle('high-contrast');
+    }
+
+    // Exemplo de função para ir para o menu circular
+    function goToMenu() {
+      window.location.href = 'menu.html';
+    }
+
+    window.addEventListener('load', () => {
+  document.querySelector('.conteudo').classList.add('visible');
+});
+
+// Mostra o botão quando a página rola para baixo
+  window.onscroll = function() {toggleScrollBtn()};
+
+  function toggleScrollBtn() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+  
+
+  </script>
+
+  <!-- Conteúdo principal -->
+  <div class="conteudo">
+   <hr>
+  <center><h1 class="story-script-regular">NPCs</h1></center>
+   <hr>
+
+<div class="area-container">
+
+  <h2>Fire Keeper (Guardião do Fogo)</h2>
+
+  <p>
+    <!-- Espaço para imagem ao lado da introdução -->
+    <img src="./media/fire-keeper.jpg" alt="Fire Keeper" style="float:left; margin-right:20px; width:120px; height:auto;" class="boss-img">
+<br>
+    A Fire Keeper é responsável por ajudar o jogador a **aumentar a quantidade de Estus Shards**, fundamental para a sobrevivência e progressão do personagem.  
+    Ela também fornece informações sobre a história do mundo, revela aspectos da lore e é essencial para alcançar certos finais do jogo.  
+    Sua presença é constante no **Santuário do Elo de Fogo**, tornando-a um NPC indispensável para qualquer jogador que queira completar o jogo e alcançar a platina.  
+    (<a href="https://darksouls.fandom.com/wiki/Fire_Keeper" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+<br>
+<br>
+  <hr>
+
+  <h3>Localização Inicial</h3>
+  <ul>
+    <li>Primeira aparição no <strong>Santuário do Elo de Fogo</strong>.</li>
+    <li>Ela permanece próxima à fogueira central, aguardando que o jogador se aproxime para interagir.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Questline Completa</h3>
+  <ol>
+    <li>Fale com a Fire Keeper regularmente para aumentar a quantidade de Estus Shards disponíveis, usando os Fragmentos de Estus coletados.</li>
+    <li>Ela também permite **nivelar atributos** do jogador se ele tiver as Almas suficientes, mas não fornece níveis gratuitos como Yoel.</li>
+    <li>Importante para os finais: em conjunto com Rosaria e outras escolhas, suas ações influenciam o desfecho do jogo.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Lore</h3>
+  <p>
+    Fire Keepers são figuras místicas que guardam o fogo sagrado, mantendo o ciclo da chama.  
+    Elas possuem conhecimento profundo sobre os Lordes das Cinzas e as forças que regem Lothric.  
+    Cada Fire Keeper tem sua própria história e ligação com o jogador, fornecendo não apenas suporte, mas também contexto narrativo.
+  </p>
+
+  <hr>
+
+  <h3>Itens Obtidos / Dados Durante a Quest</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Condição</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Fragmentos de Estus</strong></td>
+      <td>Entregues à Fire Keeper</td>
+      <td>Aumenta a quantidade de frascos de Estus do jogador</td>
+    </tr>
+    <tr>
+      <td><strong>Almas</strong></td>
+      <td>Usadas para nivelar atributos com a Fire Keeper</td>
+      <td>Permite melhorar força, destreza, inteligência, fé e outros atributos</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Dicas Importantes</h3>
+  <ul>
+    <li>Entregue todos os Fragmentos de Estus encontrados para aumentar o número de frascos o mais rápido possível.</li>
+    <li>Converse com ela regularmente para não perder a oportunidade de aumentar o Estus ou aprender sobre a lore.</li>
+    <li>Interações com a Fire Keeper são necessárias para desbloquear certos finais do jogo.</li>
+  </ul>
+
+  <p><strong>Resumo:</strong> A Fire Keeper é um NPC essencial, garantindo a progressão do personagem através do aumento do Estus e fornecendo contexto narrativo vital para entender Lothric e preparar-se para os desafios finais.</p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Blacksmith Andre (Ferreiro Andre)</h2>
+
+  <p>
+    <!-- Espaço para imagem ao lado da introdução -->
+    <img src="./media/Andre_29.webp" alt="Blacksmith Andre" class="boss-img" style="float:left; margin-right:20px; width:120px; height: 120px;">
+<br>
+    Blacksmith Andre é o ferreiro principal do Santuário do Elo de Fogo, permitindo que o jogador **aprimorar armas e equipamentos**, um passo crucial para a sobrevivência e progresso.  
+    Ele também fornece serviços de **reparos e transposição de armas**, sendo indispensável para builds focadas em armas específicas e para alcançar a platina.  
+    Sua presença é fixa no Santuário, e ele é considerado o NPC de suporte mais importante após a Fire Keeper.  
+    (<a href="https://darksouls.fandom.com/wiki/Andre_the_Blacksmith" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+<br>
+  <hr>
+
+  <h3>Localização Inicial</h3>
+  <ul>
+    <li>Primeira aparição no <strong>Santuário do Elo de Fogo</strong>, próximo à fogueira central.</li>
+    <li>Ele permanece no mesmo local durante todo o jogo, disponível para aprimoramento de armas a qualquer momento.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Questline Completa</h3>
+  <ol>
+    <li>Fale com Andre para aprimorar armas usando <strong>Titanita</strong> e materiais coletados.</li>
+    <li>Ele pode criar armas especiais a partir de almas de chefes através da **Transposição de Almas**.</li>
+    <li>Permite reparar armas e escudos, garantindo que o jogador não fique desarmado durante a exploração.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Lore</h3>
+  <p>
+    Andre é um ferreiro experiente, cuja habilidade é reconhecida em todo Lothric.  
+    Ele representa o artesanato e a tradição, mantendo a cultura das armas e equipamentos vivos mesmo em tempos de decadência.  
+    Sua dedicação ao fogo e ao trabalho garante que os aventureiros possam enfrentar os desafios sem limitações.
+  </p>
+
+  <hr>
+
+  <h3>Itens Obtidos / Dados Durante a Quest</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Condição</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Armas aprimoradas</strong></td>
+      <td>Fornecidas ao utilizar Titanita ou almas de chefe</td>
+      <td>Permite maior dano e eficiência em combate</td>
+    </tr>
+    <tr>
+      <td><strong>Escudos e equipamentos reparados</strong></td>
+      <td>Qualquer arma ou escudo danificado</td>
+      <td>Evita penalidades de durabilidade, essencial para troféus de combate</td>
+    </tr>
+    <tr>
+      <td><strong>Armas de chefe (Transposição)</strong></td>
+      <td>Necessário entregar almas de chefes a Andre</td>
+      <td>Criação de armas únicas e poderosas, importantes para builds e troféus</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Dicas Importantes</h3>
+  <ul>
+    <li>Leve todas as almas de chefes para Andre para desbloquear armas únicas.</li>
+    <li>Não ignore a melhoria de armas — builds fortes dependem de upgrades consistentes.</li>
+    <li>Use Andre para reparar armas frequentemente, evitando ficar sem dano durante chefes.</li>
+  </ul>
+
+  <p><strong>Resumo:</strong> Blacksmith Andre é essencial para qualquer jogador, garantindo aprimoramento de armas e equipamentos, permitindo builds completas e contribuindo diretamente para a obtenção da platina.</p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Shrine Handmaid (Moça do Santuário)</h2>
+
+  <p>
+    <!-- Espaço para imagem ao lado da introdução -->
+    <img src="./media/veia.jpg" alt="Shrine Handmaid" class="boss-img" style="float:left; margin-right:20px; width: 90px; height:auto;">
+<br>
+    A Shrine Handmaid é a comerciante fixa do Santuário do Elo de Fogo. Ela permite que o jogador **compre e venda itens**, como consumíveis, armas e materiais essenciais para o progresso e troféus.  
+    Interagir com ela é crucial para **gerenciar inventário, adquirir recursos raros** e preparar-se para áreas desafiadoras.  
+    Sua loja está sempre disponível, tornando-a um NPC de suporte indispensável.  
+    (<a href="https://darksouls.fandom.com/wiki/Shrine_Handmaid" target="_blank">Fonte: Dark Souls Wiki</a>)
+  </p>
+<br><br>
+  <hr>
+
+  <h3>Localização Inicial</h3>
+  <ul>
+    <li>Localizada permanentemente no <strong>Santuário do Elo de Fogo</strong>, próxima à fogueira central.</li>
+    <li>Disponível para compra e venda de itens a qualquer momento durante o jogo.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Questline Completa</h3>
+  <ol>
+    <li>Ela não possui uma questline narrativa, mas interagir com ela é essencial para trocar itens importantes.</li>
+    <li>Venda itens duplicados e compre consumíveis, armas ou materiais de aprimoramento.</li>
+    <li>Alguns itens raros ou especiais só podem ser adquiridos com ela após desbloqueio de progressão do jogador.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Lore</h3>
+  <p>
+    A Shrine Handmaid representa os comerciantes que permanecem fiéis ao Santuário, ajudando os aventureiros a sobreviver e prosperar.  
+    Sua presença constante reflete a importância do comércio e do suporte logístico mesmo em um mundo em decadência.
+  </p>
+
+  <hr>
+
+  <h3>Itens Obtidos / Dados Durante a Quest</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Condição</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Consumíveis</strong></td>
+      <td>Disponíveis para compra</td>
+      <td>Incluem frascos de Estus, bombas e outros itens essenciais para sobrevivência</td>
+    </tr>
+    <tr>
+      <td><strong>Armas e Escudos</strong></td>
+      <td>Disponíveis para compra</td>
+      <td>Permite melhorar builds e se preparar para chefes e áreas difíceis</td>
+    </tr>
+    <tr>
+      <td><strong>Materiais de aprimoramento</strong></td>
+      <td>Disponíveis para compra</td>
+      <td>Necessários para reforjar armas e equipamentos com Blacksmith Andre</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Dicas Importantes</h3>
+  <ul>
+    <li>Visite regularmente para garantir que não perca itens raros à venda.</li>
+    <li>Venda itens duplicados ou desnecessários para acumular almas.</li>
+    <li>Planeje compras de materiais de aprimoramento antes de enfrentar chefes mais difíceis.</li>
+  </ul>
+
+  <p><strong>Resumo:</strong> A Shrine Handmaid é o NPC de comércio essencial no Santuário do Elo de Fogo, fornecendo recursos, armas e materiais necessários para builds, upgrades e preparação para a platina.</p>
+
+</div>
+
+
+<div class="area-container">
+
+  <h2>Ludleth de Courland</h2>
+
+  <div style="display: flex; align-items: flex-start; gap: 20px;">
+    <img src="./media/Ludleth de Courland.jpg" alt="Ludleth de Courland" class="boss-img" style="width:150px;">
+    
+    <div>
+    <br>
+      <p>
+        Ludleth de Courland é um dos cinco Senhores das Cinzas que retornam ao Santuário do Elo do Fogo. 
+        Ao contrário dos demais, ele permanece voluntariamente em seu trono, oferecendo seus serviços ao jogador.
+        Ele é essencial para o sistema de <strong>Transposição de Almas</strong>, que permite transformar almas de chefes em armas, feitiços e anéis únicos.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>Localização Inicial</h3>
+  <p>
+    Encontra-se sentado em seu trono no Santuário do Elo do Fogo desde o início do jogo, 
+    logo após derrotar Iudex Gundyr e acessar o local pela primeira vez. 
+    Seu trono está localizado à esquerda da Fire Keeper, identificado pela inscrição “Ludleth the Exiled”.
+  </p>
+
+  <hr>
+
+  <h3>Questline Completa</h3>
+  <ol>
+    <li>Fale com Ludleth assim que chegar ao Santuário. Ele introduz brevemente o conceito dos Senhores das Cinzas.</li>
+    <li>Após obter a <strong>Transposing Kiln</strong> (forno de transposição) ao derrotar o chefe <strong>Curse-Rotted Greatwood</strong>, entregue o item a Ludleth.</li>
+    <li>Depois disso, ele passa a oferecer a transposição de almas de chefes por armas e feitiços especiais.</li>
+    <li>Se o jogador escolher o final <strong>Usurpação do Fogo</strong> ou <strong>Manter o Fogo Apagado</strong>, Ludleth comentará sobre o destino da chama, revelando sua compreensão do ciclo de sacrifício.</li>
+    <li>Se o jogador o atacar, ele morre permanentemente, impossibilitando o uso da transposição.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Lore</h3>
+  <p>
+    Ludleth é conhecido como o “Pequeno Senhor das Cinzas”, exilado de Courland. 
+    Diferente dos outros Lordes, ele aceitou o fardo da chama por vontade própria, o que o torna único entre seus pares. 
+    Sua fala e comportamento sugerem um profundo arrependimento e sabedoria, sendo um dos poucos personagens que compreende o verdadeiro significado do ciclo do fogo e da escuridão.
+  </p>
+
+  <hr>
+
+  <h3>Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Condição</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Serviço de Transposição</strong></td>
+      <td>Disponível após entregar a <strong>Transposing Kiln</strong></td>
+      <td>Permite criar armas e feitiços de almas de chefes</td>
+    </tr>
+    <tr>
+      <td><strong>Almas de Chefes</strong></td>
+      <td>Usadas com Ludleth</td>
+      <td>Podem ser transpostas em itens únicos</td>
+    </tr>
+    <tr>
+      <td><strong>Diálogo especial de fim de jogo</strong></td>
+      <td>Dependendo do final escolhido</td>
+      <td>Fornece lore adicional sobre o ciclo do fogo</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <p><strong>Resumo:</strong> Ludleth de Courland é indispensável para a platina de Dark Souls III, pois sem ele não é possível obter todas as armas e feitiços únicos oriundos da transposição de almas de chefes.</p>
+  
+  <p>(<a href="https://darksouls.fandom.com/wiki/Ludleth_of_Courland" target="_blank">Fonte: Dark Souls Wiki</a>)</p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Orbeck de Vinheim</h2>
+
+  <div style="display: flex; align-items: flex-start; gap: 20px;">
+    <img src="./media/mago-baitola.webp" alt="Orbeck de Vinheim" class="boss-img" style="width:200px;">
+    
+    <div>
+    
+      <p>
+        Orbeck de Vinheim é um feiticeiro errante proveniente da renomada escola de Vinheim. 
+        Ele é um mestre das <strong>feitiçarias</strong> e um dos NPCs mais importantes para jogadores que pretendem completar todos os feitiços e conquistar a platina. 
+        Orbeck oferece poderosos feitiços e uma questline que afeta diretamente o progresso mágico do jogador.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>Localização Inicial</h3>
+  <p>
+    Orbeck é encontrado pela primeira vez nas <strong>Ruínas do Caminho dos Sacrifícios (Road of Sacrifices)</strong>. 
+    Para encontrá-lo, siga o caminho da fogueira “Crucifixion Woods” e entre em uma torre ao fundo, 
+    próxima aos magos de cristal. Ele estará sentado lendo um livro. 
+    O jogador deve ter no mínimo <strong>10 de Inteligência</strong> para convencê-lo a ir ao <strong>Santuário do Elo do Fogo</strong>.
+  </p>
+
+  <hr>
+
+  <h3>Questline Completa</h3>
+  <ol>
+    <li>Encontre Orbeck nas Ruínas do Caminho dos Sacrifícios e convença-o a ir ao Santuário (requer 10 de Inteligência).</li>
+    <li>Após sua chegada, ele oferecerá ensino de feitiçarias e venderá magias iniciais.</li>
+    <li>Durante o jogo, entregue a ele os seguintes pergaminhos para expandir seu inventário:
+      <ul>
+        <li><strong>Sorcerer’s Scroll</strong> – Obtido nas Catacumbas de Carthus.</li>
+        <li><strong>Golden Scroll</strong> – Encontrado próximo à Fogueira Farron Keep.</li>
+        <li><strong>Logan’s Scroll</strong> – Obtido na Grand Archives.</li>
+        <li><strong>Crystal Scroll</strong> – Drop do Crystal Sage, nas Ruínas.</li>
+      </ul>
+    </li>
+    <li>Com todos os pergaminhos entregues, ele venderá todas as feitiçarias do jogo.</li>
+    <li>Ao final da quest, se o jogador comprar todas as magias e progredir o suficiente, Orbeck deixará o Santuário e será encontrado morto na <strong>Grand Archives</strong>.</li>
+    <li>Leve seu cadáver à <strong>Firelink Shrine Handmaid</strong> para desbloquear seus itens finais.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Lore</h3>
+  <p>
+    Orbeck foi um estudante talentoso de Vinheim, mas banido por mergulhar em artes arcanas proibidas. 
+    Seu conhecimento e ambição o afastaram da academia, levando-o a buscar novos pupilos e compreender os limites da feitiçaria. 
+    Suas falas e destino final refletem a tragédia comum entre os sábios de Lothric: a busca por poder que termina em solidão e morte.
+  </p>
+
+  <hr>
+
+  <h3>Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Condição</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Feitiços e Scrolls</strong></td>
+      <td>Vendidos após entregar pergaminhos</td>
+      <td>Necessários para troféus e builds mágicas</td>
+    </tr>
+    <tr>
+      <td><strong>Orbeck’s Ashes</strong></td>
+      <td>Obtidas ao encontrar seu corpo na Grand Archives</td>
+      <td>Permite comprar seus feitiços restantes com a Handmaid</td>
+    </tr>
+    <tr>
+      <td><strong>Young Dragon Ring / Bellowing Dragoncrest Ring</strong></td>
+      <td>Obtidos durante sua questline</td>
+      <td>Aumentam o dano de feitiçarias</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <p><strong>Resumo:</strong> Orbeck é um NPC essencial para builds de magia e troféus relacionados a feitiços. 
+  Completar sua quest é obrigatório para conquistar 100% das feitiçarias e, portanto, indispensável para a platina.</p>
+
+  <p>(<a href="https://darksouls.fandom.com/wiki/Orbeck_of_Vinheim" target="_blank">Fonte: Dark Souls Wiki</a>)</p>
+
+</div>
+
+
+<div class="area-container">
+
+  <h2>Yoel de Londor</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/yoel.jpg" alt="Yoel de Londor" class="boss-img" style="width: 150px;">
+    <p>
+      <strong>Yoel de Londor</strong> é um dos primeiros NPCs ligados à trilha de Londor e ao final da Usurpação do Fogo.
+      Ele é um peregrino que o jogador encontra após o portão da <strong>Muralha de Lothric</strong>, ajoelhado entre cadáveres.
+      Sua função principal é permitir que o jogador receba as marcas negras de Londor (Hollowing) e aumente o poder gratuitamente algumas vezes.
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    Encontrado logo após derrotar o <strong>Iudex Gundyr</strong> e avançar pela Muralha de Lothric.  
+    Ele está ajoelhado à direita de uma ponte quebrada, antes da primeira fogueira principal da muralha.  
+    Após falar com ele e aceitar seu serviço, ele se muda para o <strong>Firelink Shrine</strong>.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Encontre Yoel nas ruínas após a Muralha de Lothric e aceite seu pedido para ser seu mestre.</li>
+    <li>Ele se muda para Firelink Shrine e oferece a opção de “<strong>Draw Out True Strength</strong>”, aumentando seu nível gratuitamente (até 5 vezes).</li>
+    <li>Cada nível é concedido ao morrer várias vezes, aumentando o Hollowing.</li>
+    <li>Após receber todos os 5 aumentos, Yoel morre naturalmente e é substituído por <strong>Yuria de Londor</strong>.</li>
+    <li>Essa sequência é essencial para o final <strong>“Usurpation of Fire”</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Lore</h3>
+  <p>
+    Yoel é um dos peregrinos de Londor, terra dos mortos-vivos.  
+    Ele busca um Senhor das Cinzas que aceite a verdade de Londor e se torne o novo soberano das trevas.  
+    Sua devoção a Londor o leva a sacrificar-se para garantir a aparição de Yuria, que dá continuidade à missão de dominar a chama e libertar os mortos-vivos.
+  </p>
+
+  <hr>
+
+  <h3> Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Níveis gratuitos (Draw Out True Strength)</strong></td>
+      <td>Fale com ele em Firelink Shrine e escolha a opção até 5 vezes</td>
+      <td>Permite aumentar seu nível sem custo até certo ponto</td>
+    </tr>
+    <tr>
+      <td><strong>Ligação com Yuria de Londor</strong></td>
+      <td>Após sua morte, Yuria aparece no mesmo local</td>
+      <td>Desbloqueia o caminho para o final “Usurpation of Fire”</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls3.wiki.fextralife.com/Yoel+of+Londor" target="_blank">Dark Souls 3 Wiki (Fextralife)</a></em></p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Yuria de Londor</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/Yuria de Londor.jpg" alt="Yuria de Londor" class="boss-img" style="width: 150px;">
+    <p>
+      <strong>Yuria de Londor</strong> é uma poderosa agente de Londor que aparece em <strong>Firelink Shrine</strong> após a morte de Yoel de Londor.
+      Ela é uma figura crucial para alcançar o final <strong>“Usurpation of Fire”</strong>, representando o lado sombrio e político dos mortos-vivos.
+      Yuria guia o jogador pelo caminho dos “Lordes das Trevas” e oferece itens e magias relacionados à fé e à Hollowing.
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    Surge no <strong>Firelink Shrine</strong> no mesmo local onde Yoel de Londor estava, após sua morte natural (caso o jogador tenha aceitado seus cinco aumentos de poder).  
+    Yuria permanece ali até o final do jogo, desde que o jogador não rompa seu pacto com Londor.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Após Yoel morrer, fale com Yuria em Firelink Shrine. Ela reconhecerá o jogador como o novo “Lord of Hollows”.</li>
+    <li>Ela vende itens exclusivos e fornece informações sobre o destino do Lorde das Trevas.</li>
+    <li>Fale com <strong>Anri de Astora</strong> durante sua jornada. Yuria instruirá o jogador a garantir que Anri cumpra um “casamento sombrio” com o protagonista.</li>
+    <li>Complete a cerimônia do casamento em <strong>Irithyll of the Boreal Valley</strong> para avançar o final “Usurpation of Fire”.</li>
+    <li>Após isso, Yuria o apoiará até o final, e caso você complete o ritual corretamente, ela estará presente no final alternativo do jogo.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Yuria é uma das três irmãs de Londor, junto de <strong>Liliane</strong> e <strong>Elfriede</strong>.  
+    Ela é uma defensora da filosofia da humanidade pura — a crença de que os mortos-vivos devem governar sobre as cinzas e reinar nas trevas.  
+    Sua fé em Londor é inabalável, e ela vê no protagonista o potencial para se tornar o verdadeiro Rei das Trevas.  
+    Yuria representa o equilíbrio entre manipulação e devoção, sendo uma das figuras mais misteriosas da trilogia.
+  </p>
+
+  <hr>
+
+  <h3> Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Dark Hand</strong></td>
+      <td>Comprado diretamente com Yuria</td>
+      <td>Arma mágica que drena HP dos inimigos e é útil em builds de fé e sorte</td>
+    </tr>
+    <tr>
+      <td><strong>Itens de feitiço de Londor</strong></td>
+      <td>Disponíveis em seu inventário</td>
+      <td>Permitem usar milagres e magias ligados à escuridão</td>
+    </tr>
+    <tr>
+      <td><strong>Ritual de Casamento Sombrio</strong></td>
+      <td>Parte da quest com Anri de Astora</td>
+      <td>Necessário para desbloquear o final “Usurpation of Fire”</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls3.wiki.fextralife.com/Yuria+of+Londor" target="_blank">Dark Souls 3 Wiki (Fextralife)</a></em></p>
+
+</div>
+
+
+<div class="area-container">
+
+  <h2>Anri de Astora</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/]anri.avif" alt="Anri de Astora" class="boss-img" style="width: 180px;">
+    <p>
+      <strong>Anri de Astora</strong> é um dos personagens mais importantes de <strong>Dark Souls III</strong>, aparecendo ao longo de várias áreas principais.  
+      Sua jornada está intimamente ligada ao jogador e pode levar a diferentes destinos, incluindo o final <strong>“Usurpation of Fire”</strong>.  
+      A forma e o gênero de Anri variam de acordo com o sexo do protagonista.
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    A primeira aparição de Anri ocorre nas <strong>Catacumbas de Carthus</strong>, acompanhada de seu companheiro <strong>Horace the Hushed</strong>.  
+    Antes disso, ela pode ser encontrada no <strong>Firelink Shrine</strong> após desbloquear certas áreas (dependendo do progresso de Yoel e Yuria de Londor).  
+    Anri também é vista no <strong>Road of Sacrifices</strong> e em <strong>Irithyll of the Boreal Valley</strong> dependendo das escolhas feitas.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Encontre Anri e Horace nas <strong>Catacumbas de Carthus</strong>. Fale com ambos para iniciar a quest.</li>
+    <li>Após Horace desaparecer, conte a Anri sua localização (ou minta) — essa escolha afeta o desfecho.</li>
+    <li>Se você estiver seguindo a linha de Yuria, Anri será parte do <strong>ritual do casamento sombrio</strong> em <strong>Irithyll of the Boreal Valley</strong>.</li>
+    <li>Caso siga a linha “neutra”, você pode ajudar Anri a derrotar Aldrich e alcançar seu próprio final.</li>
+    <li>Dependendo de suas escolhas, Anri pode sobreviver, morrer como Hollow, ou se tornar parte do ritual da escuridão.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Anri vem de Astora, uma terra associada a heróis e cavaleiros sagrados.  
+    Assim como o jogador, busca derrotar os Lordes das Cinzas e dar fim ao ciclo da chama.  
+    Seu destino é profundamente trágico — seja pela corrupção causada pela escuridão de Londor ou pela perda de seu parceiro Horace.  
+    Anri representa o dilema moral da série: seguir o dever e a luz ou aceitar a escuridão como redenção.
+  </p>
+
+  <hr>
+
+  <h3> Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Espada Direita de Anri</strong></td>
+      <td>Obtida após a conclusão de sua questline</td>
+      <td>Escala com Sorte, ideal para builds de Hollow</td>
+    </tr>
+    <tr>
+      <td><strong>Conjunto de Armadura de Anri</strong></td>
+      <td>Vendido pela Shrine Handmaid após a morte de Anri</td>
+      <td>Peitoral leve com boa resistência a magia</td>
+    </tr>
+    <tr>
+      <td><strong>Estus Shard / Itens de Quest</strong></td>
+      <td>Encontrados próximos ao corpo de Anri, dependendo do desfecho</td>
+      <td>Itens diversos úteis para progressão</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls3.wiki.fextralife.com/Anri+of+Astora" target="_blank">Dark Souls 3 Wiki (Fextralife)</a></em></p>
+
+</div>
+
+
+<div class="area-container">
+
+  <h2>Horace, o Silencioso (Horace the Hushed)</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/Horace.webp" alt="Horace, o Silencioso" class="boss-img" style="width: 120px;">
+    <p>
+      Horace, o Silencioso, é um cavaleiro leal de Astora e companheiro de <strong>Anri de Astora</strong>.  
+      Embora não fale, ele desempenha um papel crucial na questline de Anri e no final <strong>“Usurpation of Fire”</strong>.  
+      Horace aparece em diversas áreas do jogo e seu destino influencia diretamente o progresso e desfecho da missão de Anri.
+      (<a href="https://darksouls.fandom.com/wiki/Horace_the_Hushed" target="_blank">Fonte: Dark Souls Wiki</a>)
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    Horace é inicialmente encontrado nas <strong>Catacumbas de Carthus</strong>, acompanhado de Anri.  
+    Ele também pode aparecer no <strong>Firelink Shrine</strong> após certas condições de progresso, e em áreas subsequentes como o <strong>Road of Sacrifices</strong>.  
+    Mais tarde, ele é encontrado na <strong>Smouldering Lake</strong> como inimigo hostil, dependendo das escolhas do jogador.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Encontre Horace e Anri nas <strong>Catacumbas de Carthus</strong> e converse com ambos para iniciar a quest.</li>
+    <li>Horace eventualmente desaparece; o jogador pode revelar ou esconder sua localização de Anri — essa escolha altera a progressão.</li>
+    <li>Ao ser encontrado na <strong>Smouldering Lake</strong>, Horace ataca o jogador; derrotá-lo permite obter seu equipamento.</li>
+    <li>Se o jogador revelar sua localização a Anri antes de derrotá-lo, ela sobreviverá ou seguirá caminhos alternativos de acordo com o final escolhido.</li>
+    <li>Decisões tomadas aqui afetam diretamente a conclusão da quest de Anri e o final <strong>Usurpation of Fire</strong>.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Horace representa a lealdade inabalável dos cavaleiros de Astora.  
+    Sua devoção a Anri mostra a ética de proteção e sacrifício mesmo diante de perigos mortais.  
+    Sua queda ou sobrevivência demonstra os efeitos da corrupção e da escuridão em Lothric, refletindo os dilemas morais centrais do jogo.
+  </p>
+
+  <hr>
+
+  <h3> Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Conjunto de Armadura de Horace</strong></td>
+      <td>Dropado ao derrotar Horace na Smouldering Lake</td>
+      <td>Armadura simbólica de Astora, útil para builds de força</td>
+    </tr>
+    <tr>
+      <td><strong>Escudo de Horace</strong></td>
+      <td>Obtido junto com sua armadura</td>
+      <td>Escudo resistente, útil para defesa física e bloqueio</td>
+    </tr>
+    <tr>
+      <td><strong>Blue Sentinels Covenant</strong></td>
+      <td>Falando com Horace no Firelink Shrine antes de eventos hostis</td>
+      <td>Permite ingressar no pacto dos Sentinelas Azuis</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls.fandom.com/wiki/Horace_the_Hushed" target="_blank">Dark Souls Wiki</a></em></p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Greirat do Assentamento dos Mortos-Vivos</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/greirat.jpg" alt="Greirat do Assentamento" class="boss-img" style="width: 160px;">
+    <p>
+      Greirat é um ladrão e comerciante que pode ser recrutado para enviar em saques ao redor de Lothric.  
+      Ele desempenha um papel importante na progressão de equipamentos e itens consumíveis do jogador, além de influenciar conquistas e troféus relacionados a sua questline.  
+      Mantê-lo vivo é essencial para aproveitar completamente seus saques e vendas.  
+      (<a href="https://darksouls.fandom.com/wiki/Greirat" target="_blank">Fonte: Dark Souls Wiki</a>)
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    Greirat é encontrado pela primeira vez preso em uma cela do <strong>Assentamento dos Mortos-Vivos</strong>.  
+    Após libertá-lo, ele se muda para o <strong>Firelink Shrine</strong>, onde passa a oferecer itens para venda e aceita missões de saque.
+  </p>
+
+  <hr>
+
+  <h3>Questline Completa</h3>
+  <ol>
+    <li>Libere Greirat da prisão no Assentamento dos Mortos-Vivos. Ele se mudará para o Firelink Shrine.</li>
+    <li>Envie Greirat em saques periódicos; ele retorna com armas, feitiços, consumíveis e titanita.</li>
+    <li>Se ele for morto em uma emboscada ou durante saques, ele não retorna, e suas recompensas futuras são perdidas.</li>
+    <li>Após o progresso do jogo, ele pode ser encontrado novamente em eventos críticos, impactando finais e troféus.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Greirat é um ladrão astuto e pragmático, focado em sobrevivência e lucro.  
+    Sua história mostra como personagens do submundo de Lothric interagem com o jogador, oferecendo vantagens estratégicas em troca de liberdade e confiança.  
+    Ele representa o equilíbrio entre risco e recompensa dentro do universo Dark Souls III.
+  </p>
+
+  <hr>
+
+  <h3> Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Itens de Saque</strong></td>
+      <td>Enviando Greirat em missões de saque</td>
+      <td>Incluem armas, feitiços, consumíveis e titanita</td>
+    </tr>
+    <tr>
+      <td><strong>Equipamentos Vendidos</strong></td>
+      <td>Disponível no Firelink Shrine após libertá-lo</td>
+      <td>Itens raros e úteis para builds diversas</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls.fandom.com/wiki/Greirat" target="_blank">Dark Souls Wiki</a></em></p>
+
+</div>
+
+
+
+<div class="area-container">
+
+  <h2>Siegward de Catarina</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/cebolao.webp" alt="Siegward de Catarina" class="boss-img" style="width: 160px;">
+    <p>
+      Siegward de Catarina é um cavaleiro leal e aliado recorrente do jogador em várias áreas de Lothric.  
+      Ele possui uma questline envolvente que inclui encontros em chefes, resgates e recompensas significativas.  
+      Manter Siegward vivo e ajudá-lo em seus objetivos é essencial para completar sua história e obter itens especiais.  
+      (<a href="https://darksouls.fandom.com/wiki/Siegward_of_Catarina" target="_blank">Fonte: Dark Souls Wiki</a>)
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    A primeira aparição de Siegward ocorre na torre de Yhorm, no <strong>Road of Sacrifices</strong>.  
+    Ele pode ser encontrado posteriormente em diferentes áreas, incluindo o <strong>Assentamento dos Mortos-Vivos</strong> e o <strong>High Wall of Lothric</strong>, dependendo do progresso do jogador.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Encontre Siegward pela primeira vez na torre de Yhorm; converse para iniciar sua questline.</li>
+    <li>Ajude Siegward a derrotar o chefe da torre ou resgate-o quando ficar preso em situações específicas.</li>
+    <li>Ele reaparece em outros pontos do jogo, como o <strong>Assentamento dos Mortos-Vivos</strong>, onde você pode encontrar itens e atualizações de sua armadura.</li>
+    <li>Dependendo de suas escolhas, Siegward pode morrer ou completar sua missão com sucesso, desbloqueando a conquista de ajuda a aliado e recompensas de equipamentos.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Siegward representa o arquétipo do cavaleiro nobre e persistente, que valoriza a lealdade e a honra acima de tudo.  
+    Sua história mostra a camaradagem e os laços forjados em Lothric, reforçando o tema de companheirismo mesmo em um mundo sombrio e implacável.
+  </p>
+
+  <hr>
+
+  <h3> Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Conjunto de Armadura de Siegward</strong></td>
+      <td>Obtido após completar sua questline com sucesso</td>
+      <td>Armadura completa com bom equilíbrio de defesa física e mágica</td>
+    </tr>
+    <tr>
+      <td><strong>Estus Shard</strong></td>
+      <td>Disponível em pontos específicos durante a quest</td>
+      <td>Incrementa o número de frascos de Estus</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls.fandom.com/wiki/Siegward_of_Catarina" target="_blank">Dark Souls Wiki</a></em></p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Sirris de Lothric</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/sirius.jpg" alt="Sirris de Lothric" class="boss-img" style="width: 160px;">
+    <p>
+      Sirris de Lothric é uma cavaleira dedicada que ajuda o jogador em várias áreas através de sua guilda e missões de invasão.  
+      Sua questline envolve encontros específicos, ajuda em chefes e recompensas de equipamento.  
+      Completar sua história garante acesso a eventos únicos e influencia finais e conquistas.  
+      (<a href="https://darksouls.fandom.com/wiki/Sirris_of_Lothric" target="_blank">Fonte: Dark Souls Wiki</a>)
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    Sirris é encontrada inicialmente no <strong>Firelink Shrine</strong>, perto da fogueira central.  
+    Após desbloquear certas áreas e progredir na história, ela pode ser encontrada em locais como o <strong>High Wall of Lothric</strong> e o <strong>Assentamento dos Mortos-Vivos</strong> para eventos de invasão e ajuda ao jogador.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Fale com Sirris no Firelink Shrine para iniciar sua questline.</li>
+    <li>Ajude-a durante invasões e ataques em determinadas áreas, incluindo encontros em chefes.</li>
+    <li>Progresso adicional depende de derrotar ou proteger certos inimigos, garantindo recompensas e diálogo final.</li>
+    <li>Dependendo das escolhas do jogador, Sirris pode ter finais variados, afetando conquistas e itens desbloqueáveis.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Sirris representa a lealdade e devoção dos Cavaleiros de Lothric, comprometida em ajudar aliados e defender os ideais de sua guilda.  
+    Sua história reforça temas de amizade, dever e sacrifício dentro do mundo de Dark Souls III.
+  </p>
+
+  <hr>
+
+  <h3> Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Conjunto de Armadura de Sirris</strong></td>
+      <td>Obtido ao completar sua questline com sucesso</td>
+      <td>Armadura leve com bom equilíbrio entre defesa física e resistência mágica</td>
+    </tr>
+    <tr>
+      <td><strong>Anel ou item de recompensa especial</strong></td>
+      <td>Concluindo interações-chave e ajudando-a em combates</td>
+      <td>Benefícios para combate e progressão de build</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls.fandom.com/wiki/Sirris_of_Lothric" target="_blank">Dark Souls Wiki</a></em></p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Leonhard de Londor</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/leonard.webp" alt="Leonhard de Londor" class="boss-img" style="width: 200px;" height="160px">
+    <p>
+      Leonhard de Londor é um assassino que oferece ao jogador a oportunidade de ingressar no <strong>Pacto dos Assassinos</strong>.  
+      Sua questline envolve pactos, invocações, e eventos que podem alterar o curso da história e desbloquear finais alternativos.  
+      Participar de suas missões é essencial para quem busca completar a platina ou explorar completamente os finais de Dark Souls III.  
+      (<a href="https://darksouls.fandom.com/wiki/Leonhard" target="_blank">Fonte: Dark Souls Wiki</a>)
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    Leonhard é encontrado pela primeira vez no <strong>Firelink Shrine</strong>, após avançar em áreas como o <strong>Road of Sacrifices</strong> e o <strong>Cathedral of the Deep</strong>.  
+    Ele se mantém disponível para interações posteriores em pontos específicos do jogo.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Converse com Leonhard no Firelink Shrine para iniciar a questline do Pacto dos Assassinos.</li>
+    <li>Ajude-o a resgatar ou eliminar certos NPCs, dependendo das opções escolhidas.</li>
+    <li>Complete as invocações e pactos disponíveis para ganhar recompensas exclusivas e itens.</li>
+    <li>Seu envolvimento influencia finais alternativos, incluindo o “Usurpation of Fire”.</li>
+    <li>Evite falhar em etapas críticas, pois Leonhard pode desaparecer ou morrer, bloqueando parte de sua questline.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Leonhard representa os ideais sombrios de Londor, focado em manipulação, assassinato e pactos para alcançar poder.  
+    Sua presença destaca a moral cinzenta do mundo de Dark Souls III e a influência dos pactos na jornada do jogador.
+  </p>
+
+  <hr>
+
+  <h3>Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Armadura e equipamentos de Londor</strong></td>
+      <td>Disponível ao completar a questline de Leonhard</td>
+      <td>Equipamentos únicos com bom equilíbrio para builds de assassino</td>
+    </tr>
+    <tr>
+      <td><strong>Anel do Pacto dos Assassinos</strong></td>
+      <td>Recebido ao ingressar e completar tarefas do pacto</td>
+      <td>Benefícios em combate e progressão de build focada em furtividade</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls.fandom.com/wiki/Leonhard" target="_blank">Dark Souls Wiki</a></em></p>
+
+</div>
+
+<div class="area-container">
+
+  <h2>Patches, o Traiçoeiro</h2>
+
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="./media/patches.jpg" alt="Patches" class="boss-img" style="width: 160px;">
+    <p>
+      Patches é conhecido por sua natureza traiçoeira, mas também pode se tornar um aliado valioso ao jogador.  
+      Sua questline envolve enganos, traições, mas também oportunidades de comércio e acesso a itens especiais.  
+      Seguir corretamente sua história garante recompensas exclusivas e influência em eventos do jogo.  
+      (<a href="https://darksouls.fandom.com/wiki/Patches_(Dark_Souls_III)" target="_blank">Fonte: Dark Souls Wiki</a>)
+    </p>
+  </div>
+
+  <hr>
+
+  <h3> Localização Inicial</h3>
+  <p>
+    Patches aparece pela primeira vez no <strong>High Wall of Lothric</strong> em um encontro emboscado.  
+    Após o primeiro encontro, ele pode ser encontrado em outras áreas, como o <strong>Assentamento dos Mortos-Vivos</strong> e <strong>Irithyll of the Boreal Valley</strong>, dependendo do progresso do jogador.
+  </p>
+
+  <hr>
+
+  <h3> Questline Completa</h3>
+  <ol>
+    <li>Encontre Patches no High Wall of Lothric; ele tentará empurrá-lo de um penhasco.</li>
+    <li>Escolha perdoá-lo após o incidente ou empurrá-lo de volta para iniciar a amizade e permitir futuras interações.</li>
+    <li>Após aceitar Patches como aliado, ele oferece comércio de itens e abre novos caminhos em áreas como o Assentamento dos Mortos-Vivos.</li>
+    <li>Continue interagindo com ele em encontros posteriores para obter recompensas adicionais e concluir sua questline.</li>
+    <li>Evite matá-lo ou falhar em encontros críticos, caso contrário, perderá os itens e oportunidades da quest.</li>
+  </ol>
+
+  <hr>
+
+  <h3> Lore</h3>
+  <p>
+    Patches é o clássico trapaceiro do universo Dark Souls, simbolizando o risco e a desconfiança em um mundo perigoso.  
+    Sua presença mostra que mesmo inimigos iniciais podem se tornar aliados úteis se o jogador fizer escolhas cuidadosas.  
+    Ele representa astúcia, humor negro e a ambiguidade moral presente na série.
+  </p>
+
+  <hr>
+
+  <h3>Itens e Recompensas</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th>Item</th>
+      <th>Como Obter</th>
+      <th>Utilidade</th>
+    </tr>
+    <tr>
+      <td><strong>Itens de Comércio Exclusivos</strong></td>
+      <td>Disponíveis após aceitar Patches como aliado</td>
+      <td>Incluem consumíveis raros, armas e anéis úteis</td>
+    </tr>
+    <tr>
+      <td><strong>Acesso a atalhos e áreas bloqueadas</strong></td>
+      <td>Ao completar encontros-chave</td>
+      <td>Facilita exploração e coleta de itens</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:15px;"><em>Fonte: <a href="https://darksouls.fandom.com/wiki/Patches_(Dark_Souls_III)" target="_blank">Dark Souls Wiki</a></em></p>
+
+</div>
+
+
+
+  </div>  <!-- Conteúdo principal -->
+
+  
+
+
+</body>
+</html>
+
